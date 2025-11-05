@@ -12,7 +12,7 @@
         <header style="background: none; color: #333; text-align: left; margin-bottom: 1rem;">
             <h1 id="bankTitle">题库加载中...</h1>
             <div class="control-buttons">
-                <button id="backBtn" class="control-button">← 返回首页</button>
+                <button id="backBtn" class="control-button layout">← 返回首页</button>
                 <!-- 布局切换按钮 -->
                 <button id="layoutToggleBtn" class="control-button layout">切换到紧凑布局</button>
                 <!-- 全局答案控制按钮（紧凑布局显示） -->
@@ -24,16 +24,22 @@
             <!-- 筛选面板 -->
             <aside class="filter-panel">
                 <div class="filter-section">
-                    <h3>范围筛选</h3>
-                    <div class="checkbox-group" id="unitFilter">
-                        <!-- 单元选项动态生成 -->
+                    <div class="filter-header">
+                        <h3>范围筛选</h3>
+                        <button type="button" id="toggleAllUnits" class="toggle-all-btn">全选</button>
+                    </div>
+                    <div class="tags-filter" id="unitFilter">
+                        <!-- 单元标签动态生成 -->
                     </div>
                 </div>
 
                 <div class="filter-section">
                     <h3>题量选择</h3>
                     <select id="questionCount" style="width: 100%; padding: 0.5rem; border: 1px solid #e2e8f0; border-radius: 5px;">
+                        <option value="1">1题</option>
+                        <option value="3">3题</option>
                         <option value="5">5题</option>
+                        <option value="7">7题</option>
                         <option value="10">10题</option>
                         <option value="20">20题</option>
                         <option value="50">50题</option>

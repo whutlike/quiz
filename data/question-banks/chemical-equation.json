@@ -2,14 +2,14 @@
   "bankInfo": {
     "name": "化学方程式默写",
     "version": "1.0",
-    "subject": "chemical-equation"
+    "subject": "化学",
+    "description": "课内化学方程式",
+    "lastUpdate": "2025-01-15"
   },
   "questions": [
     {
       "id": "chem-001",
       "unit": ["单元2"],
-      "questionType": "填空题",
-      "tags": ["碳", "燃烧"],
       "content": "碳充分燃烧的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{C + O2}\\xlongequal{点燃}\\ce{CO2}$",
@@ -18,8 +18,6 @@
     {
       "id": "chem-002",
       "unit": ["单元2"],
-      "questionType": "填空题",
-      "tags": ["硫", "燃烧"],
       "content": "硫燃烧的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{S + O2}\\xlongequal{点燃}\\ce{SO2}$",
@@ -28,8 +26,6 @@
     {
       "id": "chem-003",
       "unit": ["单元2"],
-      "questionType": "填空题",
-      "tags": ["磷", "燃烧"],
       "content": "红磷燃烧的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{4P + 5O2}\\xlongequal{点燃}\\ce{2P2O5}$",
@@ -38,8 +34,6 @@
     {
       "id": "chem-004",
       "unit": ["单元2"],
-      "questionType": "填空题",
-      "tags": ["铁", "燃烧"],
       "content": "铁丝燃烧的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{3Fe + 2O2}\\xlongequal{点燃}\\ce{Fe3O4}$",
@@ -48,8 +42,6 @@
     {
       "id": "chem-005",
       "unit": ["单元2"],
-      "questionType": "填空题",
-      "tags": ["镁", "燃烧"],
       "content": "镁条燃烧的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{2Mg + O2}\\xlongequal{点燃}\\ce{2MgO}$",
@@ -58,8 +50,6 @@
     {
       "id": "chem-006",
       "unit": ["单元2"],
-      "questionType": "填空题",
-      "tags": ["高锰酸钾", "氧气"],
       "content": "高锰酸钾制取氧气的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{2KMnO4}\\xlongequal{\\Delta}\\ce{K2MnO4 + MnO2 + O2 ^}$",
@@ -68,8 +58,6 @@
     {
       "id": "chem-007",
       "unit": ["单元2"],
-      "questionType": "填空题",
-      "tags": ["过氧化氢", "氧气"],
       "content": "过氧化氢制取氧气的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{2H2O2}\\xlongequal{\\ce{MnO2}}\\ce{2H2O + O2 ^}$",
@@ -78,8 +66,6 @@
     {
       "id": "chem-008",
       "unit": ["单元2"],
-      "questionType": "填空题",
-      "tags": ["汞", "氧气"],
       "content": "汞和氧气反应的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{2Hg + O2}\\xlongequal{\\Delta}\\ce{2HgO}$",
@@ -88,8 +74,6 @@
     {
       "id": "chem-009",
       "unit": ["单元2"],
-      "questionType": "填空题",
-      "tags": ["氧化汞", "分解"],
       "content": "氧化汞加热分解的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{2HgO}\\xlongequal{\\Delta}\\ce{2Hg + O2 ^}$",
@@ -98,8 +82,6 @@
     {
       "id": "chem-010",
       "unit": ["单元4"],
-      "questionType": "填空题",
-      "tags": ["氢气", "燃烧"],
       "content": "氢气燃烧的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{2H2 + O2}\\xlongequal{点燃}\\ce{2H2O}$",
@@ -108,8 +90,6 @@
     {
       "id": "chem-011",
       "unit": ["单元4"],
-      "questionType": "填空题",
-      "tags": ["电解", "水"],
       "content": "电解水的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{2H2O}\\xlongequal{通电}\\ce{2H2 ^ + O2 ^}$",
@@ -118,8 +98,6 @@
     {
       "id": "chem-012",
       "unit": ["单元5"],
-      "questionType": "填空题",
-      "tags": ["铜", "氧气"],
       "content": "铜与氧气反应的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{2Cu + O2}\\xlongequal{\\Delta}\\ce{2CuO}$",
@@ -128,8 +106,6 @@
     {
       "id": "chem-013",
       "unit": ["单元5"],
-      "questionType": "填空题",
-      "tags": ["铁", "硫酸铜"],
       "content": "铁和硫酸铜溶液反应的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{Fe + CuSO4}\\xlongequal{}\\ce{Cu + FeSO4}$",
@@ -138,8 +114,6 @@
     {
       "id": "chem-014",
       "unit": ["单元5"],
-      "questionType": "填空题",
-      "tags": ["碳酸钠", "盐酸"],
       "content": "碳酸钠与稀盐酸反应的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{Na2CO3 + 2HCl}\\xlongequal{}\\ce{2NaCl + H2O + CO2 ^}$",
@@ -148,8 +122,6 @@
     {
       "id": "chem-015",
       "unit": ["单元5"],
-      "questionType": "填空题",
-      "tags": ["氢氧化钠", "硫酸铜"],
       "content": "氢氧化钠溶液和硫酸铜溶液反应的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{2NaOH + CuSO4}\\xlongequal{}\\ce{Na2SO4 + Cu(OH)2 v}$",
@@ -158,8 +130,6 @@
     {
       "id": "chem-016",
       "unit": ["单元5"],
-      "questionType": "填空题",
-      "tags": ["大理石", "煅烧"],
       "content": "高温煅烧大理石的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{CaCO3}\\xlongequal{高温}\\ce{CaO + CO2 ^}$",
@@ -168,8 +138,6 @@
     {
       "id": "chem-017",
       "unit": ["单元6"],
-      "questionType": "填空题",
-      "tags": ["碳", "不充分燃烧"],
       "content": "碳不充分燃烧的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{2C + O2}\\xlongequal{点燃}\\ce{2CO}$",
@@ -178,8 +146,6 @@
     {
       "id": "chem-018",
       "unit": ["单元6"],
-      "questionType": "填空题",
-      "tags": ["碳", "还原氧化铜"],
       "content": "碳还原氧化铜的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{C + 2CuO}\\xlongequal{高温}\\ce{2Cu + CO2 ^}$",
@@ -188,8 +154,6 @@
     {
       "id": "chem-019",
       "unit": ["单元6"],
-      "questionType": "填空题",
-      "tags": ["碳", "还原氧化铁"],
       "content": "碳还原氧化铁的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{3C + 2Fe2O3}\\xlongequal{高温}\\ce{4Fe + 3CO2 ^}$",
@@ -198,8 +162,6 @@
     {
       "id": "chem-020",
       "unit": ["单元6"],
-      "questionType": "填空题",
-      "tags": ["碳", "还原二氧化碳"],
       "content": "碳还原二氧化碳的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{C + CO2}\\xlongequal{高温}\\ce{2CO}$",
@@ -208,8 +170,6 @@
     {
       "id": "chem-021",
       "unit": ["单元6"],
-      "questionType": "填空题",
-      "tags": ["碳", "还原四氧化三铁"],
       "content": "碳还原四氧化三铁的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{2C + Fe3O4}\\xlongequal{高温}\\ce{3Fe + 2CO2 ^}$",
@@ -218,8 +178,6 @@
     {
       "id": "chem-022",
       "unit": ["单元6"],
-      "questionType": "填空题",
-      "tags": ["碳酸", "分解"],
       "content": "碳酸不稳定分解的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{H2CO3}\\xlongequal{}\\ce{H2O + CO2 ^}$",
@@ -228,8 +186,6 @@
     {
       "id": "chem-023",
       "unit": ["单元6"],
-      "questionType": "填空题",
-      "tags": ["二氧化碳", "水"],
       "content": "二氧化碳和水反应的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{CO2 + H2O}\\xlongequal{}\\ce{H2CO3}$",
@@ -238,8 +194,6 @@
     {
       "id": "chem-024",
       "unit": ["单元6"],
-      "questionType": "填空题",
-      "tags": ["二氧化碳", "石灰水"],
       "content": "二氧化碳使澄清石灰水变浑浊的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{CO2 + Ca(OH)2}\\xlongequal{}\\ce{CaCO3 v + H2O}$",
@@ -248,8 +202,6 @@
     {
       "id": "chem-025",
       "unit": ["单元6"],
-      "questionType": "填空题",
-      "tags": ["一氧化碳", "燃烧"],
       "content": "一氧化碳燃烧的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{2CO + O2}\\xlongequal{点燃}\\ce{2CO2}$",
@@ -258,8 +210,6 @@
     {
       "id": "chem-026",
       "unit": ["单元6"],
-      "questionType": "填空题",
-      "tags": ["一氧化碳", "还原氧化铜"],
       "content": "一氧化碳还原氧化铜的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{CO + CuO}\\xlongequal{\\Delta}\\ce{Cu + CO2}$",
@@ -268,8 +218,6 @@
     {
       "id": "chem-027",
       "unit": ["单元6"],
-      "questionType": "填空题",
-      "tags": ["一氧化碳", "还原氧化铁"],
       "content": "一氧化碳还原氧化铁的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{3CO + Fe2O3}\\xlongequal{高温}\\ce{2Fe + 3CO2}$",
@@ -278,8 +226,6 @@
     {
       "id": "chem-028",
       "unit": ["单元6"],
-      "questionType": "填空题",
-      "tags": ["一氧化碳", "还原四氧化三铁"],
       "content": "一氧化碳还原四氧化三铁的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{4CO + Fe3O4}\\xlongequal{高温}\\ce{3Fe + 4CO2}$",
@@ -288,8 +234,6 @@
     {
       "id": "chem-029",
       "unit": ["单元6"],
-      "questionType": "填空题",
-      "tags": ["实验室", "二氧化碳"],
       "content": "实验室制取二氧化碳的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{CaCO3 + 2HCl}\\xlongequal{}\\ce{CaCl2 + H2O + CO2 ^}$",
@@ -298,8 +242,6 @@
     {
       "id": "chem-030",
       "unit": ["单元7"],
-      "questionType": "填空题",
-      "tags": ["乙醇", "燃烧"],
       "content": "乙醇燃烧的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{C2H5OH + 3O2}\\xlongequal{点燃}\\ce{2CO2 + 3H2O}$",
@@ -308,8 +250,6 @@
     {
       "id": "chem-031",
       "unit": ["单元7"],
-      "questionType": "填空题",
-      "tags": ["氧化钙", "水"],
       "content": "氧化钙和水反应的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{CaO + H2O}\\xlongequal{}\\ce{Ca(OH)2}$",
@@ -318,8 +258,6 @@
     {
       "id": "chem-032",
       "unit": ["单元7"],
-      "questionType": "填空题",
-      "tags": ["甲烷", "燃烧"],
       "content": "甲烷燃烧的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{CH4 + 2O2}\\xlongequal{点燃}\\ce{CO2 + 2H2O}$",
@@ -328,8 +266,6 @@
     {
       "id": "chem-033",
       "unit": ["单元7"],
-      "questionType": "填空题",
-      "tags": ["实验室", "氢气"],
       "content": "实验室制取氢气的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{Zn + H2SO4}\\xlongequal{}\\ce{ZnSO4 + H2 ^}$",
@@ -338,8 +274,6 @@
     {
       "id": "chem-034",
       "unit": ["单元8"],
-      "questionType": "填空题",
-      "tags": ["铝", "氧气"],
       "content": "铝与氧气反应的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{4Al + 3O2}\\xlongequal{}\\ce{2Al2O3}$",
@@ -348,8 +282,6 @@
     {
       "id": "chem-035",
       "unit": ["单元8"],
-      "questionType": "填空题",
-      "tags": ["镁", "稀盐酸"],
       "content": "镁与稀盐酸反应的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{Mg + 2HCl}\\xlongequal{}\\ce{MgCl2 + H2 ^}$",
@@ -358,8 +290,6 @@
     {
       "id": "chem-036",
       "unit": ["单元8"],
-      "questionType": "填空题",
-      "tags": ["铝", "稀盐酸"],
       "content": "铝与稀盐酸反应的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{2Al + 6HCl}\\xlongequal{}\\ce{2AlCl3 + 3H2 ^}$",
@@ -368,8 +298,6 @@
     {
       "id": "chem-037",
       "unit": ["单元8"],
-      "questionType": "填空题",
-      "tags": ["锌", "稀盐酸"],
       "content": "锌与稀盐酸反应的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{Zn + 2HCl}\\xlongequal{}\\ce{ZnCl2 + H2 ^}$",
@@ -378,8 +306,6 @@
     {
       "id": "chem-038",
       "unit": ["单元8"],
-      "questionType": "填空题",
-      "tags": ["铁", "稀盐酸"],
       "content": "铁与稀盐酸反应的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{Fe + 2HCl}\\xlongequal{}\\ce{FeCl2 + H2 ^}$",
@@ -388,8 +314,6 @@
     {
       "id": "chem-039",
       "unit": ["单元8"],
-      "questionType": "填空题",
-      "tags": ["镁", "稀硫酸"],
       "content": "镁与稀硫酸反应的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{Mg + H2SO4}\\xlongequal{}\\ce{MgSO4 + H2 ^}$",
@@ -398,8 +322,6 @@
     {
       "id": "chem-040",
       "unit": ["单元8"],
-      "questionType": "填空题",
-      "tags": ["铝", "稀硫酸"],
       "content": "铝与稀硫酸反应的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{2Al + 3H2SO4}\\xlongequal{}\\ce{Al2(SO4)3 + 3H2 ^}$",
@@ -408,8 +330,6 @@
     {
       "id": "chem-041",
       "unit": ["单元8"],
-      "questionType": "填空题",
-      "tags": ["锌", "稀硫酸"],
       "content": "锌与稀硫酸反应的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{Zn + H2SO4}\\xlongequal{}\\ce{ZnSO4 + H2 ^}$",
@@ -418,8 +338,6 @@
     {
       "id": "chem-042",
       "unit": ["单元8"],
-      "questionType": "填空题",
-      "tags": ["铁", "稀硫酸"],
       "content": "铁与稀硫酸反应的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{Fe + H2SO4}\\xlongequal{}\\ce{FeSO4 + H2 ^}$",
@@ -428,8 +346,6 @@
     {
       "id": "chem-043",
       "unit": ["单元8"],
-      "questionType": "填空题",
-      "tags": ["铝", "硫酸铜"],
       "content": "铝与硫酸铜溶液反应的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{2Al + 3CuSO4}\\xlongequal{}\\ce{Al2(SO4)3 + 3Cu}$",
@@ -438,8 +354,6 @@
     {
       "id": "chem-044",
       "unit": ["单元8"],
-      "questionType": "填空题",
-      "tags": ["铜", "硝酸银"],
       "content": "铜与硝酸银溶液反应的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{Cu + 2AgNO3}\\xlongequal{}\\ce{Cu(NO3)2 + 2Ag}$",
@@ -448,8 +362,6 @@
     {
       "id": "chem-045",
       "unit": ["单元10"],
-      "questionType": "填空题",
-      "tags": ["盐酸", "除铁锈"],
       "content": "稀盐酸除铁锈的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{6HCl + Fe2O3}\\xlongequal{}\\ce{2FeCl3 + 3H2O}$",
@@ -458,8 +370,6 @@
     {
       "id": "chem-046",
       "unit": ["单元10"],
-      "questionType": "填空题",
-      "tags": ["硫酸", "除铁锈"],
       "content": "稀硫酸除铁锈的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{3H2SO4 + Fe2O3}\\xlongequal{}\\ce{Fe2(SO4)3 + 3H2O}$",
@@ -468,8 +378,6 @@
     {
       "id": "chem-047",
       "unit": ["单元10"],
-      "questionType": "填空题",
-      "tags": ["盐酸", "氢氧化钠"],
       "content": "稀盐酸与氢氧化钠溶液反应的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{HCl + NaOH}\\xlongequal{}\\ce{NaCl + H2O}$",
@@ -478,8 +386,6 @@
     {
       "id": "chem-048",
       "unit": ["单元10"],
-      "questionType": "填空题",
-      "tags": ["盐酸", "氢氧化钙"],
       "content": "稀盐酸与氢氧化钙溶液反应的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{2HCl + Ca(OH)2}\\xlongequal{}\\ce{CaCl2 + 2H2O}$",
@@ -488,8 +394,6 @@
     {
       "id": "chem-049",
       "unit": ["单元10"],
-      "questionType": "填空题",
-      "tags": ["硫酸", "氢氧化钠"],
       "content": "稀硫酸与氢氧化钠溶液反应的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{H2SO4 + 2NaOH}\\xlongequal{}\\ce{Na2SO4 + 2H2O}$",
@@ -498,8 +402,6 @@
     {
       "id": "chem-050",
       "unit": ["单元10"],
-      "questionType": "填空题",
-      "tags": ["盐酸", "碳酸钠"],
       "content": "稀盐酸与碳酸钠溶液反应的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{2HCl + Na2CO3}\\xlongequal{}\\ce{2NaCl + H2O + CO2 ^}$",
@@ -508,8 +410,6 @@
     {
       "id": "chem-051",
       "unit": ["单元10"],
-      "questionType": "填空题",
-      "tags": ["盐酸", "硝酸银"],
       "content": "稀盐酸与硝酸银溶液反应的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{HCl + AgNO3}\\xlongequal{}\\ce{AgCl v + HNO3}$",
@@ -518,8 +418,6 @@
     {
       "id": "chem-052",
       "unit": ["单元10"],
-      "questionType": "填空题",
-      "tags": ["硫酸", "氯化钡"],
       "content": "稀硫酸与氯化钡溶液反应的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{H2SO4 + BaCl2}\\xlongequal{}\\ce{BaSO4 v + 2HCl}$",
@@ -528,8 +426,6 @@
     {
       "id": "chem-053",
       "unit": ["单元10"],
-      "questionType": "填空题",
-      "tags": ["二氧化碳", "氢氧化钠"],
       "content": "二氧化碳与氢氧化钠溶液反应的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{2NaOH + CO2}\\xlongequal{}\\ce{Na2CO3 + H2O}$",
@@ -538,8 +434,6 @@
     {
       "id": "chem-054",
       "unit": ["单元10"],
-      "questionType": "填空题",
-      "tags": ["二氧化碳", "石灰水"],
       "content": "二氧化碳与澄清石灰水反应的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{Ca(OH)2 + CO2}\\xlongequal{}\\ce{CaCO3 v + H2O}$",
@@ -548,8 +442,6 @@
     {
       "id": "chem-055",
       "unit": ["单元10"],
-      "questionType": "填空题",
-      "tags": ["氢氧化钠", "硫酸铜"],
       "content": "氢氧化钠溶液与硫酸铜溶液反应的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{2NaOH + CuSO4}\\xlongequal{}\\ce{Na2SO4 + Cu(OH)2 v}$",
@@ -558,8 +450,6 @@
     {
       "id": "chem-056",
       "unit": ["单元10"],
-      "questionType": "填空题",
-      "tags": ["氢氧化钠", "氯化铁"],
       "content": "氢氧化钠溶液与氯化铁溶液反应的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{3NaOH + FeCl3}\\xlongequal{}\\ce{3NaCl + Fe(OH)3 v}$",
@@ -568,8 +458,6 @@
     {
       "id": "chem-057",
       "unit": ["单元10"],
-      "questionType": "填空题",
-      "tags": ["石灰水", "碳酸钠"],
       "content": "澄清石灰水与碳酸钠溶液反应的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{Ca(OH)2 + Na2CO3}\\xlongequal{}\\ce{CaCO3 v + 2NaOH}$",
@@ -578,8 +466,6 @@
     {
       "id": "chem-058",
       "unit": ["单元10"],
-      "questionType": "填空题",
-      "tags": ["盐酸", "碳酸钙"],
       "content": "稀盐酸与碳酸钙反应的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{CaCO3 + 2HCl}\\xlongequal{}\\ce{CaCl2 + H2O + CO2 ^}$",
@@ -588,8 +474,6 @@
     {
       "id": "chem-059",
       "unit": ["单元10"],
-      "questionType": "填空题",
-      "tags": ["盐酸", "碳酸钠"],
       "content": "稀盐酸与碳酸钠溶液反应的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{2HCl + Na2CO3}\\xlongequal{}\\ce{2NaCl + H2O + CO2 ^}$",
@@ -598,8 +482,6 @@
     {
       "id": "chem-060",
       "unit": ["单元10"],
-      "questionType": "填空题",
-      "tags": ["盐酸", "碳酸氢钠"],
       "content": "稀盐酸与碳酸氢钠溶液反应的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{HCl + NaHCO3}\\xlongequal{}\\ce{NaCl + H2O + CO2 ^}$",
@@ -608,8 +490,6 @@
     {
       "id": "chem-061",
       "unit": ["单元10"],
-      "questionType": "填空题",
-      "tags": ["石灰水", "碳酸钠"],
       "content": "澄清石灰水与碳酸钠溶液反应的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{Ca(OH)2 + Na2CO3}\\xlongequal{}\\ce{CaCO3 v + 2NaOH}$",
@@ -618,8 +498,6 @@
     {
       "id": "chem-062",
       "unit": ["单元10"],
-      "questionType": "填空题",
-      "tags": ["氢氧化钠", "硫酸铜"],
       "content": "氢氧化钠溶液与硫酸铜溶液反应的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{2NaOH + CuSO4}\\xlongequal{}\\ce{Na2SO4 + Cu(OH)2 v}$",
@@ -628,8 +506,6 @@
     {
       "id": "chem-063",
       "unit": ["单元10"],
-      "questionType": "填空题",
-      "tags": ["硫酸铜", "氯化钡"],
       "content": "硫酸铜溶液与氯化钡溶液反应的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{CuSO4 + BaCl2}\\xlongequal{}\\ce{BaSO4 v + CuCl2}$",
@@ -638,8 +514,6 @@
     {
       "id": "chem-064",
       "unit": ["单元11"],
-      "questionType": "填空题",
-      "tags": ["葡萄糖", "氧化"],
       "content": "葡萄糖在人类体内缓慢氧化的化学方程式：________________",
       "options": null,
       "answer": "$\\ce{C6H12O6  + 6O2}\\xlongequal{酶}\\ce{6CO2 + 6H2O}$",

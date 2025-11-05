@@ -1,0 +1,249 @@
+{
+  "bankInfo": {
+    "name": "初中化学离子符号默写",
+    "version": "1.0",
+    "subject": "chemical-ion"
+  },
+  "questions": [
+    {
+      "id": "ion-001",
+      "unit": ["单元4"],
+      "content": "钠离子的符号：________________",
+      "options": null,
+      "answer": "Na⁺",
+      "explanation": "钠原子失去1个电子形成带1个单位正电荷的钠离子"
+    },
+    {
+      "id": "ion-002",
+      "unit": ["单元4"],
+      "content": "钾离子的符号：________________",
+      "options": null,
+      "answer": "K⁺",
+      "explanation": "钾原子失去1个电子形成带1个单位正电荷的钾离子"
+    },
+    {
+      "id": "ion-003",
+      "unit": ["单元4"],
+      "content": "镁离子的符号：________________",
+      "options": null,
+      "answer": "Mg²⁺",
+      "explanation": "镁原子失去2个电子形成带2个单位正电荷的镁离子"
+    },
+    {
+      "id": "ion-004",
+      "unit": ["单元4"],
+      "content": "钙离子的符号：________________",
+      "options": null,
+      "answer": "Ca²⁺",
+      "explanation": "钙原子失去2个电子形成带2个单位正电荷的钙离子"
+    },
+    {
+      "id": "ion-005",
+      "unit": ["单元4"],
+      "content": "铝离子的符号：________________",
+      "options": null,
+      "answer": "Al³⁺",
+      "explanation": "铝原子失去3个电子形成带3个单位正电荷的铝离子"
+    },
+    {
+      "id": "ion-006",
+      "unit": ["单元4"],
+      "content": "锌离子的符号：________________",
+      "options": null,
+      "answer": "Zn²⁺",
+      "explanation": "锌原子失去2个电子形成带2个单位正电荷的锌离子"
+    },
+    {
+      "id": "ion-007",
+      "unit": ["单元4"],
+      "content": "铁离子的符号（+2价）：________________",
+      "options": null,
+      "answer": "Fe²⁺",
+      "explanation": "铁原子失去2个电子形成带2个单位正电荷的亚铁离子"
+    },
+    {
+      "id": "ion-008",
+      "unit": ["单元4"],
+      "content": "铁离子的符号（+3价）：________________",
+      "options": null,
+      "answer": "Fe³⁺",
+      "explanation": "铁原子失去3个电子形成带3个单位正电荷的铁离子"
+    },
+    {
+      "id": "ion-009",
+      "unit": ["单元4"],
+      "content": "铜离子的符号（+2价）：________________",
+      "options": null,
+      "answer": "Cu²⁺",
+      "explanation": "铜原子失去2个电子形成带2个单位正电荷的铜离子"
+    },
+    {
+      "id": "ion-010",
+      "unit": ["单元4"],
+      "content": "银离子的符号：________________",
+      "options": null,
+      "answer": "Ag⁺",
+      "explanation": "银原子失去1个电子形成带1个单位正电荷的银离子"
+    },
+    {
+      "id": "ion-011",
+      "unit": ["单元4"],
+      "content": "钡离子的符号：________________",
+      "options": null,
+      "answer": "Ba²⁺",
+      "explanation": "钡原子失去2个电子形成带2个单位正电荷的钡离子"
+    },
+    {
+      "id": "ion-012",
+      "unit": ["单元4"],
+      "content": "氯离子的符号：________________",
+      "options": null,
+      "answer": "Cl⁻",
+      "explanation": "氯原子得到1个电子形成带1个单位负电荷的氯离子"
+    },
+    {
+      "id": "ion-013",
+      "unit": ["单元4"],
+      "content": "氧离子的符号：________________",
+      "options": null,
+      "answer": "O²⁻",
+      "explanation": "氧原子得到2个电子形成带2个单位负电荷的氧离子"
+    },
+    {
+      "id": "ion-014",
+      "unit": ["单元4"],
+      "content": "硫离子的符号：________________",
+      "options": null,
+      "answer": "S²⁻",
+      "explanation": "硫原子得到2个电子形成带2个单位负电荷的硫离子"
+    },
+    {
+      "id": "ion-015",
+      "unit": ["单元4"],
+      "content": "氟离子的符号：________________",
+      "options": null,
+      "answer": "F⁻",
+      "explanation": "氟原子得到1个电子形成带1个单位负电荷的氟离子"
+    },
+    {
+      "id": "ion-016",
+      "unit": ["单元4"],
+      "content": "溴离子的符号：________________",
+      "options": null,
+      "answer": "Br⁻",
+      "explanation": "溴原子得到1个电子形成带1个单位负电荷的溴离子"
+    },
+    {
+      "id": "ion-017",
+      "unit": ["单元4"],
+      "content": "碘离子的符号：________________",
+      "options": null,
+      "answer": "I⁻",
+      "explanation": "碘原子得到1个电子形成带1个单位负电荷的碘离子"
+    },
+    {
+      "id": "ion-018",
+      "unit": ["单元4"],
+      "content": "氮离子的符号：________________",
+      "options": null,
+      "answer": "N³⁻",
+      "explanation": "氮原子得到3个电子形成带3个单位负电荷的氮离子"
+    },
+    {
+      "id": "ion-019",
+      "unit": ["单元4"],
+      "content": "磷离子的符号：________________",
+      "options": null,
+      "answer": "P³⁻",
+      "explanation": "磷原子得到3个电子形成带3个单位负电荷的磷离子"
+    },
+    {
+      "id": "ion-020",
+      "unit": ["单元4"],
+      "content": "氢氧根离子的符号：________________",
+      "options": null,
+      "answer": "OH⁻",
+      "explanation": "氢氧根离子带1个单位负电荷"
+    },
+    {
+      "id": "ion-021",
+      "unit": ["单元4"],
+      "content": "硝酸根离子的符号：________________",
+      "options": null,
+      "answer": "NO₃⁻",
+      "explanation": "硝酸根离子带1个单位负电荷"
+    },
+    {
+      "id": "ion-022",
+      "unit": ["单元4"],
+      "content": "硫酸根离子的符号：________________",
+      "options": null,
+      "answer": "SO₄²⁻",
+      "explanation": "硫酸根离子带2个单位负电荷"
+    },
+    {
+      "id": "ion-023",
+      "unit": ["单元4"],
+      "content": "碳酸根离子的符号：________________",
+      "options": null,
+      "answer": "CO₃²⁻",
+      "explanation": "碳酸根离子带2个单位负电荷"
+    },
+    {
+      "id": "ion-024",
+      "unit": ["单元4"],
+      "content": "磷酸根离子的符号：________________",
+      "options": null,
+      "answer": "PO₄³⁻",
+      "explanation": "磷酸根离子带3个单位负电荷"
+    },
+    {
+      "id": "ion-025",
+      "unit": ["单元4"],
+      "content": "铵根离子的符号：________________",
+      "options": null,
+      "answer": "NH₄⁺",
+      "explanation": "铵根离子带1个单位正电荷"
+    },
+    {
+      "id": "ion-026",
+      "unit": ["单元4"],
+      "content": "碳酸氢根离子的符号：________________",
+      "options": null,
+      "answer": "HCO₃⁻",
+      "explanation": "碳酸氢根离子带1个单位负电荷"
+    },
+    {
+      "id": "ion-027",
+      "unit": ["单元4"],
+      "content": "高锰酸根离子的符号：________________",
+      "options": null,
+      "answer": "MnO₄⁻",
+      "explanation": "高锰酸根离子带1个单位负电荷"
+    },
+    {
+      "id": "ion-028",
+      "unit": ["单元4"],
+      "content": "锰酸根离子的符号：________________",
+      "options": null,
+      "answer": "MnO₄²⁻",
+      "explanation": "锰酸根离子带2个单位负电荷"
+    },
+    {
+      "id": "ion-029",
+      "unit": ["单元4"],
+      "content": "氯酸根离子的符号：________________",
+      "options": null,
+      "answer": "ClO₃⁻",
+      "explanation": "氯酸根离子带1个单位负电荷"
+    },
+    {
+      "id": "ion-030",
+      "unit": ["单元4"],
+      "content": "氢离子的符号：________________",
+      "options": null,
+      "answer": "H⁺",
+      "explanation": "氢原子失去1个电子形成带1个单位正电荷的氢离子"
+    }
+  ]
+}

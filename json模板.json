@@ -1,0 +1,32 @@
+{
+  "bankInfo": {
+    "name": "初中数学题库",
+    "subject": "数学",
+    "description": "涵盖初中数学全部知识点",
+    "version": "1.0",
+    "lastUpdate": "2024-01-15"
+  },
+  "questions": [
+    {
+      "id": "math-001",
+      "unit": ["单元1"],
+      "content": "计算：$2x + 3x = ?$",
+      "options": [
+        "A. $5x$",
+        "B. $6x$", 
+        "C. $5x^2$",
+        "D. $6x^2$"
+      ],
+      "answer": "A. $5x$",
+      "explanation": "合并同类项，$2x + 3x = (2+3)x = 5x$"
+    },
+    {
+      "id": "math-002", 
+      "unit": ["单元1"],
+      "content": "一个正方形的边长是 5cm，它的面积是 ______ $cm^2$。",
+      "options": null,
+      "answer": "25",
+      "explanation": "正方形面积公式：边长 × 边长 = $5 \\times 5 = 25cm^2$"
+    }
+  ]
+}

@@ -9,12 +9,11 @@ class QuizManager {
             questionCount: '5',
             orderMode: 'sequential'
         };
-        this.layoutMode = 'normal'; // 'normal' 或 'compact'
+        this.layoutMode = 'normal';
         this.sequentialStartIndex = 0;
         this.hasInitialized = false;
         this.allAnswersVisible = false;
         
-        // 等待DOM加载完成
         if (document.readyState === 'loading') {
             document.addEventListener('DOMContentLoaded', () => this.init());
         } else {
@@ -23,9 +22,6 @@ class QuizManager {
     }
 
     async init() {
-        console.log('初始化QuizManager');
-        
-        // 先绑定事件
         this.bindEvents();
 
         const urlParams = new URLSearchParams(window.location.search);
@@ -43,12 +39,7 @@ class QuizManager {
     }
 
     bindEvents() {
-        console.log('绑定事件');
-        
-        // 使用事件委托
         document.addEventListener('click', (e) => {
-            console.log('点击事件:', e.target.id);
-            
             if (e.target.id === 'layoutToggleBtn') {
                 this.toggleLayout();
             }
@@ -60,7 +51,6 @@ class QuizManager {
             }
         });
 
-        // 应用设置按钮
         const applyBtn = document.querySelector('button[onclick="applySettings()"]');
         if (applyBtn) {
             applyBtn.addEventListener('click', () => this.applySettings());
@@ -68,37 +58,13 @@ class QuizManager {
     }
 
     async loadBankData(bankId) {
-        try {
-            const response = await fetch(`data/question-banks/${bankId}.json`);
-            const data = await response.json();
-            
-            this.currentBank = data.bankInfo;
-            this.questions = data.questions;
-            
-            document.getElementById('bankTitle').textContent = this.currentBank.name;
-            
-        } catch (error) {
-            console.error('加载题库失败:', error);
-            this.loadSampleData(bankId);
-        }
-    }
-
-    loadSampleData(bankId) {
-        this.currentBank = {
-            name: '示例题库',
-            version: '1.0'
-        };
+        const response = await fetch(`data/question-banks/${bankId}.json`);
+        const data = await response.json();
         
-        this.questions = Array.from({length: 20}, (_, i) => ({
-            id: `sample-${i + 1}`,
-            unit: [`单元${Math.floor(i / 4) + 1}`],
-            questionType: i % 2 === 0 ? '选择题' : '填空题',
-            tags: ['示例'],
-            content: `示例题目 ${i + 1}: 计算 $\\frac{${i + 1}}{${i + 2}}$ 的值`,
-            options: i % 2 === 0 ? ['A. 选项1', 'B. 选项2', 'C. 选项3', 'D. 选项4'] : null,
-            answer: `答案 ${i + 1}`,
-            explanation: `解析 ${i + 1}`
-        }));
+        this.currentBank = data.bankInfo;
+        this.questions = data.questions;
+        
+        document.getElementById('bankTitle').textContent = this.currentBank.name;
     }
 
     renderFilters() {
@@ -111,16 +77,33 @@ class QuizManager {
         const units = Array.from({length: 11}, (_, i) => `单元${i + 1}`).concat(['中考复习']);
         
         container.innerHTML = units.map(unit => `
-            <div class="checkbox-item">
-                <input type="checkbox" id="unit-${unit}" value="${unit}">
-                <label for="unit-${unit}">${unit}</label>
-            </div>
+            <div class="unit-tag" data-unit="${unit}">${unit}</div>
         `).join('');
+
+        container.addEventListener('click', (e) => {
+            if (e.target.classList.contains('unit-tag')) {
+                e.target.classList.toggle('selected');
+            }
+        });
+
+        const toggleAllBtn = document.getElementById('toggleAllUnits');
+        toggleAllBtn.addEventListener('click', () => {
+            const allTags = container.querySelectorAll('.unit-tag');
+            const allSelected = Array.from(allTags).every(tag => tag.classList.contains('selected'));
+            
+            allTags.forEach(tag => {
+                if (allSelected) {
+                    tag.classList.remove('selected');
+                } else {
+                    tag.classList.add('selected');
+                }
+            });
+
+            toggleAllBtn.textContent = allSelected ? '全选' : '取消全选';
+        });
     }
 
     applySettings(isInitial = false) {
-        console.log('应用设置，布局模式:', this.layoutMode);
-        
         this.updateSettings();
         
         this.filteredQuestions = this.questions.filter(question => {
@@ -132,6 +115,8 @@ class QuizManager {
             }
             return true;
         });
+        
+        this.updateToggleAllButton();
         
         if (isInitial || this.hasFilterChanged()) {
             this.sequentialStartIndex = 0;
@@ -148,9 +133,9 @@ class QuizManager {
     }
 
     hasFilterChanged() {
-        const currentUnits = this.getCheckedValues('unit').sort().join(',');
+        const currentUnits = this.getSelectedUnits().sort().join(',');
         const previousUnits = (this.lastAppliedUnits || []).sort().join(',');
-        this.lastAppliedUnits = this.getCheckedValues('unit');
+        this.lastAppliedUnits = this.getSelectedUnits();
         return currentUnits !== previousUnits;
     }
 
@@ -191,13 +176,23 @@ class QuizManager {
     }
 
     updateSettings() {
-        this.settings.units = this.getCheckedValues('unit');
+        this.settings.units = this.getSelectedUnits();
         this.settings.questionCount = document.getElementById('questionCount').value;
     }
 
-    getCheckedValues(prefix) {
-        const checkboxes = document.querySelectorAll(`input[type="checkbox"][id^="${prefix}-"]:checked`);
-        return Array.from(checkboxes).map(cb => cb.value);
+    getSelectedUnits() {
+        const selectedTags = document.querySelectorAll('.unit-tag.selected');
+        return Array.from(selectedTags).map(tag => tag.getAttribute('data-unit'));
+    }
+
+    updateToggleAllButton() {
+        const toggleAllBtn = document.getElementById('toggleAllUnits');
+        if (!toggleAllBtn) return;
+        
+        const allTags = document.querySelectorAll('.unit-tag');
+        const allSelected = allTags.length > 0 && Array.from(allTags).every(tag => tag.classList.contains('selected'));
+        
+        toggleAllBtn.textContent = allSelected ? '取消全选' : '全选';
     }
 
     shuffleArray(array) {
@@ -230,18 +225,11 @@ class QuizManager {
     }
 
     toggleLayout() {
-        console.log('=== 开始切换布局 ===');
-        console.log('当前布局模式:', this.layoutMode);
-        
-        // 切换布局模式
         this.layoutMode = this.layoutMode === 'normal' ? 'compact' : 'normal';
         this.allAnswersVisible = false;
         
         const layoutBtn = document.getElementById('layoutToggleBtn');
         const allAnswersBtn = document.getElementById('allAnswersBtn');
-        
-        console.log('切换后布局模式:', this.layoutMode);
-        console.log('找到的按钮 - layoutBtn:', layoutBtn, 'allAnswersBtn:', allAnswersBtn);
         
         if (this.layoutMode === 'normal') {
             layoutBtn.textContent = '切换到紧凑布局';
@@ -256,11 +244,7 @@ class QuizManager {
             }
         }
         
-        // 强制重新应用设置来刷新题目显示
-        console.log('重新渲染题目...');
         this.applySettings();
-        
-        console.log('=== 布局切换完成 ===');
     }
 
     toggleAllAnswers() {
@@ -269,7 +253,6 @@ class QuizManager {
         const allAnswersBtn = document.getElementById('allAnswersBtn');
         allAnswersBtn.textContent = this.allAnswersVisible ? '折叠所有答案' : '展开所有答案';
         
-        // 更新所有答案的显示状态
         this.displayQuestions.forEach(question => {
             const answerSection = document.getElementById(`answer-${question.id}`);
             if (answerSection) {
@@ -285,16 +268,11 @@ class QuizManager {
     }
 
     renderQuestions() {
-        console.log('渲染题目，布局模式:', this.layoutMode, '题目数量:', this.displayQuestions.length);
-        
         const container = document.getElementById('questionsList');
         const loading = document.getElementById('loadingIndicator');
         const noResults = document.getElementById('noResults');
         
-        if (!container) {
-            console.error('找不到questionsList容器');
-            return;
-        }
+        if (!container) return;
         
         loading.style.display = 'none';
         
@@ -311,25 +289,15 @@ class QuizManager {
             startNumber = this.sequentialStartIndex + 1;
         }
         
-        console.log('使用布局模式:', this.layoutMode);
-        
         if (this.layoutMode === 'compact') {
-            // 紧凑布局模式
             container.innerHTML = this.displayQuestions.map((question, index) => {
                 const questionNumber = startNumber + index;
                 const answerVisible = this.allAnswersVisible ? '' : 'hidden';
                 
                 return `
-                    <div class="question-card compact-card" data-layout="compact">
-                        <div class="question-header">
-                            <div class="question-meta">
-                                <span class="question-number">${questionNumber}.</span>
-                                <span class="question-type">${question.questionType}</span>
-                                <span>${question.unit.join(', ')}</span>
-                            </div>
-                        </div>
-                        
+                    <div class="question-card compact-card">
                         <div class="question-content compact-content">
+                            <span class="question-number">${questionNumber}.</span>
                             ${question.content.replace(/\n/g, '<br>')}
                         </div>
                         
@@ -353,21 +321,13 @@ class QuizManager {
                 `;
             }).join('');
         } else {
-            // 原始布局模式
             container.innerHTML = this.displayQuestions.map((question, index) => {
                 const questionNumber = startNumber + index;
                     
                 return `
-                    <div class="question-card" data-layout="normal">
-                        <div class="question-header">
-                            <div class="question-meta">
-                                <span class="question-number">${questionNumber}.</span>
-                                <span class="question-type">${question.questionType}</span>
-                                <span>${question.unit.join(', ')}</span>
-                            </div>
-                        </div>
-                        
+                    <div class="question-card">
                         <div class="question-content">
+                            <span class="question-number">${questionNumber}.</span>
                             ${question.content.replace(/\n/g, '<br>')}
                         </div>
                         
@@ -376,7 +336,7 @@ class QuizManager {
                                 ${question.options.map(option => `
                                     <div class="option-item">${option.replace(/\n/g, '<br>')}</div>
                                 `).join('')}
-                            </div>
+                        </div>
                         ` : ''}
                         
                         <div class="answer-section hidden" id="answer-${question.id}">
@@ -396,7 +356,6 @@ class QuizManager {
             }).join('');
         }
         
-        console.log('题目渲染完成，容器内容长度:', container.innerHTML.length);
         this.renderMath();
     }
 

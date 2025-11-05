@@ -1,3 +1,7 @@
 {
-  "banks": [ "chemistry", "chemical-equation"]
+  "banks": [  
+    "chemical-equation",
+    "test",
+    "ion"
+  ]
 }
