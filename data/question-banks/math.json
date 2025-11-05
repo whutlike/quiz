@@ -1,0 +1,34 @@
+{
+  "bankInfo": {
+    "name": "初中化学题库",
+    "version": "1.0",
+    "subject": "chemistry"
+  },
+  "questions": [
+    {
+      "id": "chem-001",
+      "unit": ["单元1", "物质构成"],
+      "questionType": "选择题",
+      "tags": ["原子", "分子", "基础"],
+      "content": "水分子的化学式是：",
+      "options": [
+        "A. $\\ce{HO}$",
+        "B. $\\ce{H2O}$", 
+        "C. $\\ce{HO2}$",
+        "D. $\\ce{H2O2}$"
+      ],
+      "answer": "B",
+      "explanation": "水分子由两个氢原子和一个氧原子组成，化学式为 $\\ce{H2O}$"
+    },
+    {
+      "id": "chem-002",
+      "unit": ["单元2", "化学反应"],
+      "questionType": "填空题",
+      "tags": ["方程式", "配平"],
+      "content": "配平化学方程式：$\\ce{CH4 + O2 -> CO2 + H2O}$",
+      "options": null,
+      "answer": "$\\ce{CH4 + 2O2 -> CO2 + 2H2O}$",
+      "explanation": "甲烷完全燃烧生成二氧化碳和水，需要配平氧原子数量"
+    }
+  ]
+}

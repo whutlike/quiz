@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>题库系统 - 首页</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/katex/katex.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>题库系统</h1>
+            <p>选择题库开始刷题</p>
+        </header>
+        
+        <main>
+            <div class="banks-grid" id="banksContainer">
+                <!-- 题库按钮动态加载 -->
+            </div>
+        </main>
+        
+        <footer>
+            <p>支持公式渲染 • 智能筛选 • 答案管理</p>
+        </footer>
+    </div>
+
+    <script src="js/katex/katex.min.js"></script>
+    <script src="js/katex/mhchem.min.js"></script> <!-- mhchem必须在auto-render之前 -->
+    <script src="js/katex/auto-render.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

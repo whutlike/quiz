@@ -1,0 +1,8 @@
+{
+  "presetTags": {
+    "difficulty": ["简单", "中等", "困难"],
+    "knowledgePoint": ["力学    ", "电学", "光学", "原子", "分子", "化学反应"],
+    "examType": ["中考真题", "模拟题", "练习题"]
+  },
+  "customTags": []
+}

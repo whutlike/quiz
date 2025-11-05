@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>题目浏览 - 题库系统</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/katex/katex.min.css">
+</head>
+<body>
+    <div class="container">
+        <header style="background: none; color: #333; text-align: left; margin-bottom: 1rem;">
+            <h1 id="bankTitle">题库加载中...</h1>
+            <div class="control-buttons">
+                <button id="backBtn" class="control-button">← 返回首页</button>
+                <!-- 布局切换按钮 -->
+                <button id="layoutToggleBtn" class="control-button layout">切换到紧凑布局</button>
+                <!-- 全局答案控制按钮（紧凑布局显示） -->
+                <button id="allAnswersBtn" class="control-button answers">展开所有答案</button>
+            </div>
+        </header>
+
+        <div class="quiz-container">
+            <!-- 筛选面板 -->
+            <aside class="filter-panel">
+                <div class="filter-section">
+                    <h3>范围筛选</h3>
+                    <div class="checkbox-group" id="unitFilter">
+                        <!-- 单元选项动态生成 -->
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <h3>题量选择</h3>
+                    <select id="questionCount" style="width: 100%; padding: 0.5rem; border: 1px solid #e2e8f0; border-radius: 5px;">
+                        <option value="5">5题</option>
+                        <option value="10">10题</option>
+                        <option value="20">20题</option>
+                        <option value="50">50题</option>
+                        <option value="all">全部题目</option>
+                    </select>
+                </div>
+
+                <div class="filter-section">
+                    <h3>出题模式</h3>
+                    <div class="button-group">
+                        <button onclick="setOrderMode('sequential')" id="sequentialBtn" class="sequential active">顺序出题</button>
+                        <button onclick="setOrderMode('random')" id="randomBtn" class="random">随机出题</button>
+                    </div>
+                </div>
+
+                <button onclick="applySettings()" style="width: 100%; background: #48bb78; color: white; border: none; padding: 0.75rem; border-radius: 5px; cursor: pointer; font-size: 1rem;">
+                    应用设置
+                </button>
+            </aside>
+
+            <!-- 题目列表 -->
+            <main class="questions-container" id="questionsContainer">
+                <div id="questionsList">
+                    <!-- 题目卡片动态生成 -->
+                </div>
+                <div id="loadingIndicator" style="text-align: center; padding: 2rem;">
+                    加载中...
+                </div>
+                <div id="noResults" style="text-align: center; padding: 2rem; display: none;">
+                    没有找到符合条件的题目
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="js/katex/katex.min.js"></script>
+    <script src="js/katex/mhchem.min.js"></script>
+    <script src="js/katex/auto-render.min.js"></script>
+    <script src="js/quiz.js"></script>
+</body>
+</html>
