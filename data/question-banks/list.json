@@ -1,7 +1,9 @@
 {
   "banks": [  
-    "chemical-equation",
-    "test",
-    "ion"
+    "chemical_equation",
+    "chemistry_concepts",
+    "question_answer",
+    "daily_quiz",
+    "test"
   ]
 }

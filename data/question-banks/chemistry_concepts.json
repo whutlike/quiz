@@ -1,0 +1,467 @@
+{
+  "bankInfo": {
+    "name": "基本概念",
+    "subject": "化学",
+    "description": "初中化学基本概念",
+    "version": "1.0",
+    "lastUpdate": "2025-07-10"
+  },
+  "questions": [
+    {
+      "id": "concept-001",
+      "unit": ["单元1"],
+      "content": "什么是物理变化？",
+      "options": null,
+      "answer": "没有生成其他物质的变化",
+      "explanation": ""
+    },
+    {
+      "id": "concept-002",
+      "unit": ["单元1"],
+      "content": "什么是化学变化？",
+      "options": null,
+      "answer": "生成其他物质的变化，又叫化学反应",
+      "explanation": ""
+    },
+    {
+      "id": "concept-003",
+      "unit": ["单元1"],
+      "content": "什么是化学性质？",
+      "options": null,
+      "answer": "物质在化学变化中表现出来的性质",
+      "explanation": ""
+    },
+    {
+      "id": "concept-004",
+      "unit": ["单元1"],
+      "content": "什么是物理性质？",
+      "options": null,
+      "answer": "物质不需要发生化学变化就表现出来的性质",
+      "explanation": ""
+    },
+    {
+      "id": "concept-005",
+      "unit": ["单元2"],
+      "content": "什么是混合物？",
+      "options": null,
+      "answer": "由两种或两种以上物质混合而成的物质",
+      "explanation": ""
+    },
+    {
+      "id": "concept-006",
+      "unit": ["单元2"],
+      "content": "什么是纯净物？",
+      "options": null,
+      "answer": "只由一种物质组成的物质",
+      "explanation": ""
+    },
+    {
+      "id": "concept-007",
+      "unit": ["单元2"],
+      "content": "什么是化合反应？",
+      "options": null,
+      "answer": "由两种或两种以上物质生成另一种物质的反应",
+      "explanation": ""
+    },
+    {
+      "id": "concept-008",
+      "unit": ["单元2"],
+      "content": "什么是氧化反应？",
+      "options": null,
+      "answer": "物质与氧气发生的反应",
+      "explanation": ""
+    },
+    {
+      "id": "concept-009",
+      "unit": ["单元2"],
+      "content": "什么是催化剂？",
+      "options": null,
+      "answer": "在化学反应里能改变其他物质的化学反应速率，而本身的质量和化学性质在反应前后都没有发生变化的物质叫做催化剂",
+      "explanation": ""
+    },
+    {
+      "id": "concept-010",
+      "unit": ["单元2"],
+      "content": "什么是分解反应？",
+      "options": null,
+      "answer": "由一种反应物生成两种或两种以上其他物质的反应",
+      "explanation": ""
+    },
+    {
+      "id": "concept-011",
+      "unit": ["单元3"],
+      "content": "什么是分子？",
+      "options": null,
+      "answer": "由分子构成的物质，分子是保持其化学性质的最小粒子",
+      "explanation": ""
+    },
+    {
+      "id": "concept-012",
+      "unit": ["单元3"],
+      "content": "什么是原子？",
+      "options": null,
+      "answer": "原子是化学变化中的最小粒子",
+      "explanation": ""
+    },
+    {
+      "id": "concept-013",
+      "unit": ["单元3"],
+      "content": "什么是核电荷数？",
+      "options": null,
+      "answer": "原子核所带的正电荷数",
+      "explanation": ""
+    },
+    {
+      "id": "concept-014",
+      "unit": ["单元3"],
+      "content": "什么是离子？",
+      "options": null,
+      "answer": "带电的原子（或原子团）叫做离子",
+      "explanation": ""
+    },
+    {
+      "id": "concept-015",
+      "unit": ["单元3"],
+      "content": "什么是阳离子？",
+      "options": null,
+      "answer": "带正电的原子叫做阳离子",
+      "explanation": ""
+    },
+    {
+      "id": "concept-016",
+      "unit": ["单元3"],
+      "content": "什么是阴离子？",
+      "options": null,
+      "answer": "带负电的原子叫做阴离子",
+      "explanation": ""
+    },
+    {
+      "id": "concept-017",
+      "unit": ["单元3"],
+      "content": "什么是相对原子质量？",
+      "options": null,
+      "answer": "以一种碳原子质量的1/12为标准，其他原子的质量与它相比所得到的比，作为这种原子的相对原子质量（符号为Ar）",
+      "explanation": ""
+    },
+    {
+      "id": "concept-018",
+      "unit": ["单元3"],
+      "content": "什么是元素？",
+      "options": null,
+      "answer": "元素是质子数（即核电荷数）相同的一类原子的总称",
+      "explanation": ""
+    },
+    {
+      "id": "concept-019",
+      "unit": ["单元3"],
+      "content": "什么是周期？",
+      "options": null,
+      "answer": "每一横行叫做一个周期",
+      "explanation": ""
+    },
+    {
+      "id": "concept-020",
+      "unit": ["单元3"],
+      "content": "什么是族？",
+      "options": null,
+      "answer": "每一纵列叫做一个族（8，9，10三个纵列共同组成一个族）",
+      "explanation": ""
+    },
+    {
+      "id": "concept-021",
+      "unit": ["单元4"],
+      "content": "什么是硬水？",
+      "options": null,
+      "answer": "含有较多可溶性钙镁化合物的水叫做硬水",
+      "explanation": ""
+    },
+    {
+      "id": "concept-022",
+      "unit": ["单元4"],
+      "content": "什么是软水？",
+      "options": null,
+      "answer": "不含或含较少可溶性钙镁化合物的水叫做软水",
+      "explanation": ""
+    },
+    {
+      "id": "concept-023",
+      "unit": ["单元4"],
+      "content": "什么是化合物？",
+      "options": null,
+      "answer": "由不同种元素组成的纯净物",
+      "explanation": ""
+    },
+    {
+      "id": "concept-024",
+      "unit": ["单元4"],
+      "content": "什么是氧化物？",
+      "options": null,
+      "answer": "由两种元素组成的化合物中，其中一种元素是氧元素的叫做氧化物",
+      "explanation": ""
+    },
+    {
+      "id": "concept-025",
+      "unit": ["单元4"],
+      "content": "什么是单质？",
+      "options": null,
+      "answer": "由同种元素组成的纯净物叫做单质",
+      "explanation": ""
+    },
+    {
+      "id": "concept-026",
+      "unit": ["单元4"],
+      "content": "什么是化学式？",
+      "options": null,
+      "answer": "用元素符号和数字的组合表示物质组成的式子叫做化学式",
+      "explanation": ""
+    },
+    {
+      "id": "concept-027",
+      "unit": ["单元4"],
+      "content": "什么是相对分子质量？",
+      "options": null,
+      "answer": "化学式种各原子相对原子质量的总和（符号为Mr）",
+      "explanation": ""
+    },
+    {
+      "id": "concept-028",
+      "unit": ["单元5"],
+      "content": "什么是质量守恒定律？",
+      "options": null,
+      "answer": "参加化学反应的各物质的质量总和，等于反应后生成各物质的质量总和",
+      "explanation": ""
+    },
+    {
+      "id": "concept-029",
+      "unit": ["单元5"],
+      "content": "什么是化学方程式？",
+      "options": null,
+      "answer": "用化学式来表示化学反应的式子，叫做化学方程式",
+      "explanation": ""
+    },
+    {
+      "id": "concept-030",
+      "unit": ["单元6"],
+      "content": "什么是还原反应？",
+      "options": null,
+      "answer": "含氧化合物里的氧被夺去的反应，叫做还原反应",
+      "explanation": ""
+    },
+    {
+      "id": "concept-031",
+      "unit": ["单元6"],
+      "content": "什么是温室效应？",
+      "options": null,
+      "answer": "大气中的二氧化碳就像温室里的玻璃或塑料薄膜一样，既能让太阳光透过，又能使地面吸收的太阳光的热量不易向外散失，起到了对地球的保温作用，这种现象叫做温室效应",
+      "explanation": ""
+    },
+    {
+      "id": "concept-032",
+      "unit": ["单元7"],
+      "content": "什么是燃烧？",
+      "options": null,
+      "answer": "通常情况下，可燃物与氧气发生的一种发光、放热的剧烈的氧化反应叫做燃烧",
+      "explanation": ""
+    },
+    {
+      "id": "concept-033",
+      "unit": ["单元7"],
+      "content": "什么是爆炸？",
+      "options": null,
+      "answer": "可燃物在有限的空间内急剧地燃烧，就会在短时间类聚集大量的热，使气体的体积迅速膨胀而引起爆炸",
+      "explanation": ""
+    },
+    {
+      "id": "concept-034",
+      "unit": ["单元7"],
+      "content": "什么是爆炸极限？",
+      "options": null,
+      "answer": "可燃性气体等在空气中达到一定的含量时，遇到火源就会发生爆炸。这个能发生爆炸的含量范围，叫做爆炸极限",
+      "explanation": ""
+    },
+    {
+      "id": "concept-035",
+      "unit": ["单元8"],
+      "content": "什么是合金？",
+      "options": null,
+      "answer": "在金属中加热熔合某些金属或非金属，制得的据哟金属特征的物质",
+      "explanation": ""
+    },
+    {
+      "id": "concept-036",
+      "unit": ["单元8"],
+      "content": "什么是置换反应？",
+      "options": null,
+      "answer": "由一种单质与一种化合物反应，生成另一种单质和另一种化合物的反应",
+      "explanation": ""
+    },
+    {
+      "id": "concept-037",
+      "unit": ["单元9"],
+      "content": "什么是溶液？",
+      "options": null,
+      "answer": "一种或几种物质分散到另一种物质里，形成的均一的、稳定的混合物叫做溶液",
+      "explanation": ""
+    },
+    {
+      "id": "concept-038",
+      "unit": ["单元9"],
+      "content": "什么是溶剂？",
+      "options": null,
+      "answer": "能溶解其他物质的物质叫做溶剂",
+      "explanation": ""
+    },
+    {
+      "id": "concept-039",
+      "unit": ["单元9"],
+      "content": "什么是溶质？",
+      "options": null,
+      "answer": "被溶解的物质叫做溶质",
+      "explanation": ""
+    },
+    {
+      "id": "concept-040",
+      "unit": ["单元9"],
+      "content": "什么是乳浊液？",
+      "options": null,
+      "answer": "小液滴分散到液体里形成混合物叫做乳浊液",
+      "explanation": ""
+    },
+    {
+      "id": "concept-041",
+      "unit": ["单元9"],
+      "content": "什么是悬浊液？",
+      "options": null,
+      "answer": "液体里悬浮着不溶于水的固体小颗粒，使液体呈现浑浊状态，这种液体叫做悬浊液",
+      "explanation": ""
+    },
+    {
+      "id": "concept-042",
+      "unit": ["单元9"],
+      "content": "什么是饱和溶液和不饱和溶液？",
+      "options": null,
+      "answer": "在一定温度下，向一定量溶剂里加入某种溶质，当溶质不能继续溶解时，所得到溶液叫做这种溶质的饱和溶液；还能继续溶解的溶液，叫做这种溶质的不饱和溶液",
+      "explanation": ""
+    },
+    {
+      "id": "concept-043",
+      "unit": ["单元9"],
+      "content": "什么是结晶？",
+      "options": null,
+      "answer": "溶质从溶液中以晶体的形式析出，这一过程叫做结晶",
+      "explanation": ""
+    },
+    {
+      "id": "concept-044",
+      "unit": ["单元9"],
+      "content": "什么是固体溶解度？",
+      "options": null,
+      "answer": "在一定温度下，某固态物质在100g溶剂里达到饱和状态时所溶解的质量",
+      "explanation": ""
+    },
+    {
+      "id": "concept-045",
+      "unit": ["单元9"],
+      "content": "什么是气体溶解度？",
+      "options": null,
+      "answer": "气体的压强为101kPa和一定温度时，在1体积水里溶解达到饱和状态时的气体体积",
+      "explanation": ""
+    },
+    {
+      "id": "concept-046",
+      "unit": ["单元9"],
+      "content": "什么是溶质的质量分数？",
+      "options": null,
+      "answer": "溶液中溶质的质量分数是溶质质量与溶液质量之比",
+      "explanation": ""
+    },
+    {
+      "id": "concept-047",
+      "unit": ["单元10"],
+      "content": "什么是溶液的酸碱度？",
+      "options": null,
+      "answer": "用于精确的表示溶液酸碱性的强弱程度",
+      "explanation": ""
+    },
+    {
+      "id": "concept-048",
+      "unit": ["单元10"],
+      "content": "什么是潮解？",
+      "options": null,
+      "answer": "在空气中容易吸收水分，表面潮湿并逐渐溶解，这种现象叫做潮解",
+      "explanation": ""
+    },
+    {
+      "id": "concept-049",
+      "unit": ["单元10"],
+      "content": "什么是酸？",
+      "options": null,
+      "answer": "在水中解离的阳离子只有氢离子的化合物",
+      "explanation": ""
+    },
+    {
+      "id": "concept-050",
+      "unit": ["单元10"],
+      "content": "什么是碱？",
+      "options": null,
+      "answer": "在水中解离的阴离子只有氢氧根离子的化合物",
+      "explanation": ""
+    },
+    {
+      "id": "concept-051",
+      "unit": ["单元10"],
+      "content": "什么是中和反应？",
+      "options": null,
+      "answer": "酸与碱作用生成盐和水的反应",
+      "explanation": ""
+    },
+    {
+      "id": "concept-052",
+      "unit": ["单元10"],
+      "content": "什么是盐？",
+      "options": null,
+      "answer": "金属离子或铵根离子与酸根离子形成的化合物",
+      "explanation": ""
+    },
+    {
+      "id": "concept-053",
+      "unit": ["单元10"],
+      "content": "什么是复分解反应？",
+      "options": null,
+      "answer": "由两种化合物互相交换成分，生成另外两种化合物的反应",
+      "explanation": ""
+    },
+    {
+      "id": "concept-054",
+      "unit": ["单元10"],
+      "content": "什么是复合肥料？",
+      "options": null,
+      "answer": "同时含有氮、磷、钾中两种或三种营养元素的化肥",
+      "explanation": ""
+    },
+    {
+      "id": "concept-055",
+      "unit": ["单元11"],
+      "content": "什么是常量元素？",
+      "options": null,
+      "answer": "人体内含量超过0.01%的元素",
+      "explanation": ""
+    },
+    {
+      "id": "concept-056",
+      "unit": ["单元11"],
+      "content": "什么是微量元素？",
+      "options": null,
+      "answer": "含量在0.01%以下的元素",
+      "explanation": ""
+    },
+    {
+      "id": "concept-057",
+      "unit": ["单元11"],
+      "content": "什么是复合材料？",
+      "options": null,
+      "answer": "将几种材料复合起来，综合各组分性能的优点，形成复合材料",
+      "explanation": ""
+    }
+  ]
+}
