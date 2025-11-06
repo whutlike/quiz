@@ -49,12 +49,43 @@ class QuizManager {
             if (e.target.id === 'backBtn') {
                 window.location.href = 'index.html';
             }
+            if (e.target.id === 'prevGroupBtn') {
+                this.showPrevGroup();
+            }
+            if (e.target.id === 'nextGroupBtn') {
+                this.showNextGroup();
+            }
+            // 侧边栏控制
+            if (e.target.id === 'toggleSidebar') {
+                this.toggleSidebar();
+            }
+            if (e.target.id === 'filterOverlay') {
+                this.closeSidebar();
+            }
         });
 
         const applyBtn = document.querySelector('button[onclick="applySettings()"]');
         if (applyBtn) {
-            applyBtn.addEventListener('click', () => this.applySettings());
+            applyBtn.addEventListener('click', () => {
+                this.applySettings();
+                this.closeSidebar(); // 应用设置后关闭侧边栏
+            });
         }
+    }
+
+    // 侧边栏控制方法
+    toggleSidebar() {
+        const sidebar = document.querySelector('.filter-panel');
+        const overlay = document.getElementById('filterOverlay');
+        sidebar.classList.toggle('active');
+        overlay.classList.toggle('active');
+    }
+
+    closeSidebar() {
+        const sidebar = document.querySelector('.filter-panel');
+        const overlay = document.getElementById('filterOverlay');
+        sidebar.classList.remove('active');
+        overlay.classList.remove('active');
     }
 
     async loadBankData(bankId) {
@@ -106,6 +137,7 @@ class QuizManager {
     applySettings(isInitial = false) {
         this.updateSettings();
         
+        // 筛选题目
         this.filteredQuestions = this.questions.filter(question => {
             if (this.settings.units.length > 0) {
                 const hasMatchingUnit = question.unit.some(unit => 
@@ -118,16 +150,13 @@ class QuizManager {
         
         this.updateToggleAllButton();
         
+        // 初始加载或筛选条件变化时重置索引
         if (isInitial || this.hasFilterChanged()) {
             this.sequentialStartIndex = 0;
         }
         
         this.processQuestions();
         this.renderQuestions();
-        
-        if (!isInitial && this.settings.orderMode === 'sequential') {
-            this.updateSequentialIndex();
-        }
         
         this.hasInitialized = true;
     }
@@ -150,9 +179,10 @@ class QuizManager {
                 questionsToShow = this.shuffleArray([...this.filteredQuestions]);
             }
         } else {
+            // 顺序模式：确保不会超出题目总数
             if (this.settings.questionCount !== 'all') {
                 const count = parseInt(this.settings.questionCount);
-                const endIndex = this.sequentialStartIndex + count;
+                const endIndex = Math.min(this.sequentialStartIndex + count, this.filteredQuestions.length);
                 questionsToShow = this.filteredQuestions.slice(this.sequentialStartIndex, endIndex);
             } else {
                 questionsToShow = this.filteredQuestions.slice(this.sequentialStartIndex);
@@ -162,16 +192,37 @@ class QuizManager {
         this.displayQuestions = questionsToShow;
     }
 
-    updateSequentialIndex() {
-        if (this.settings.questionCount !== 'all') {
+    showPrevGroup() {
+        if (this.settings.orderMode === 'sequential' && this.settings.questionCount !== 'all') {
             const count = parseInt(this.settings.questionCount);
-            this.sequentialStartIndex += count;
+            this.sequentialStartIndex -= count;
             
-            if (this.sequentialStartIndex >= this.filteredQuestions.length) {
-                this.sequentialStartIndex = 0;
+            // 如果小于0，跳到最后一组
+            if (this.sequentialStartIndex < 0) {
+                const lastGroupStart = Math.max(0, this.filteredQuestions.length - count);
+                this.sequentialStartIndex = lastGroupStart;
             }
-        } else {
-            this.sequentialStartIndex = 0;
+            
+            this.processQuestions();
+            this.renderQuestions();
+        }
+    }
+
+    showNextGroup() {
+        if (this.settings.questionCount !== 'all') {
+            if (this.settings.orderMode === 'sequential') {
+                const count = parseInt(this.settings.questionCount);
+                this.sequentialStartIndex += count;
+                
+                // 如果超出题目总数，回到开头
+                if (this.sequentialStartIndex >= this.filteredQuestions.length) {
+                    this.sequentialStartIndex = 0;
+                }
+            }
+            // 随机模式不需要更新索引，直接重新处理题目即可
+            
+            this.processQuestions();
+            this.renderQuestions();
         }
     }
 
@@ -232,15 +283,15 @@ class QuizManager {
         const allAnswersBtn = document.getElementById('allAnswersBtn');
         
         if (this.layoutMode === 'normal') {
-            layoutBtn.textContent = '切换到紧凑布局';
+            layoutBtn.textContent = '切换布局';
             if (allAnswersBtn) {
                 allAnswersBtn.style.display = 'none';
             }
         } else {
-            layoutBtn.textContent = '切换到原始布局';
+            layoutBtn.textContent = '切换布局';
             if (allAnswersBtn) {
                 allAnswersBtn.style.display = 'inline-block';
-                allAnswersBtn.textContent = '展开所有答案';
+                allAnswersBtn.textContent = '展开答案';
             }
         }
         
@@ -251,7 +302,7 @@ class QuizManager {
         this.allAnswersVisible = !this.allAnswersVisible;
         
         const allAnswersBtn = document.getElementById('allAnswersBtn');
-        allAnswersBtn.textContent = this.allAnswersVisible ? '折叠所有答案' : '展开所有答案';
+        allAnswersBtn.textContent = this.allAnswersVisible ? '折叠答案' : '展开答案';
         
         this.displayQuestions.forEach(question => {
             const answerSection = document.getElementById(`answer-${question.id}`);
@@ -278,7 +329,7 @@ class QuizManager {
         
         if (this.displayQuestions.length === 0) {
             noResults.style.display = 'block';
-            container.innerHTML = '<div style="text-align: center; color: #718096;">没有更多题目了，请调整筛选条件</div>';
+            container.innerHTML = '<div style="text-align: center; color: #718096;">没有找到符合条件的题目</div>';
             return;
         }
         
@@ -287,6 +338,23 @@ class QuizManager {
         let startNumber = 1;
         if (this.settings.orderMode === 'sequential') {
             startNumber = this.sequentialStartIndex + 1;
+        }
+        
+        // 添加下一组按钮（仅在不是全部题目时显示）
+        let navigationButtons = '';
+        if (this.settings.questionCount !== 'all' && this.filteredQuestions.length > 0) {
+            navigationButtons = `
+                <div class="navigation-buttons" style="display: flex; gap: 1rem; justify-content: center; margin: 1rem 0;">
+                    ${this.settings.orderMode === 'sequential' ? `
+                        <button id="prevGroupBtn" class="control-button" style="background: #ed8936;">
+                            上一组
+                        </button>
+                    ` : ''}
+                    <button id="nextGroupBtn" class="control-button" style="background: #48bb78;">
+                        下一组
+                    </button>
+                </div>
+            `;
         }
         
         if (this.layoutMode === 'compact') {
@@ -319,7 +387,7 @@ class QuizManager {
                         </div>
                     </div>
                 `;
-            }).join('');
+            }).join('') + navigationButtons;
         } else {
             container.innerHTML = this.displayQuestions.map((question, index) => {
                 const questionNumber = startNumber + index;
@@ -353,7 +421,7 @@ class QuizManager {
                         </button>
                     </div>
                 `;
-            }).join('');
+            }).join('') + navigationButtons;
         }
         
         this.renderMath();

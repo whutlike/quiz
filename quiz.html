@@ -12,11 +12,13 @@
         <header style="background: none; color: #333; text-align: left; margin-bottom: 1rem;">
             <h1 id="bankTitle">题库加载中...</h1>
             <div class="control-buttons">
-                <button id="backBtn" class="control-button layout">← 返回首页</button>
+                <button id="backBtn" class="control-button layout">返回首页</button>
+                <!-- 侧边栏切换按钮 -->
+                <button id="toggleSidebar" class="control-button layout">筛选设置</button>
                 <!-- 布局切换按钮 -->
-                <button id="layoutToggleBtn" class="control-button layout">切换到紧凑布局</button>
+                <button id="layoutToggleBtn" class="control-button layout">切换布局</button>
                 <!-- 全局答案控制按钮（紧凑布局显示） -->
-                <button id="allAnswersBtn" class="control-button answers">展开所有答案</button>
+                <button id="allAnswersBtn" class="control-button answers">展开答案</button>
             </div>
         </header>
 
@@ -74,6 +76,9 @@
             </main>
         </div>
     </div>
+
+    <!-- 侧边栏遮罩 -->
+    <div class="filter-overlay" id="filterOverlay"></div>
 
     <script src="js/katex/katex.min.js"></script>
     <script src="js/katex/mhchem.min.js"></script>
