@@ -1,0 +1,371 @@
+{
+  "bankInfo": {
+    "name": "化学方程式配平练习",
+    "subject": "化学",
+    "description": "第五单元专用",
+    "version": "1.0",
+    "lastUpdate": "2025-07-10"
+  },
+  "questions": [
+    {
+      "id": "balance-001",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_P + \\_\\_O_2\\frac{\\ 点燃\\ }{}\\_\\_P_2O_5}$",
+      "options": null,
+      "answer": "$\\ce{4P + 5O2}\\xlongequal{点燃}\\ce{2P2O5}$",
+      "explanation": ""
+    },
+    {
+      "id": "balance-002",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_C + \\_\\_O_2\\frac{\\ 点燃\\ }{}\\_\\_CO_2}$",
+      "options": null,
+      "answer": "$\\ce{C + O2}\\xlongequal{点燃}\\ce{CO2}$",
+      "explanation": ""
+    },
+    {
+      "id": "balance-003",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_Fe + \\_\\_O_2\\frac{\\ 点燃\\ }{}\\_\\_Fe_3O_4}$",
+      "options": null,
+      "answer": "$\\ce{3Fe + 2O2}\\xlongequal{点燃}\\ce{Fe3O4}$",
+      "explanation": ""
+    },
+    {
+      "id": "balance-004",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_H_2O_2\\frac{\\ MnO_2\\ }{}\\_\\_H_2O + \\_\\_O_2\\uparrow}$",
+      "options": null,
+      "answer": "$\\ce{2H2O2}\\xlongequal{}\\ce{2H2O + O2\\uparrow}$",
+      "explanation": ""
+    },
+    {
+      "id": "balance-005",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_H_2O\\frac{\\ 通电\\ }{}\\_\\_H_2\\uparrow + \\_\\_O_2\\uparrow}$",
+      "options": null,
+      "answer": "$\\ce{2H2O}\\xlongequal{通电}\\ce{2H2\\uparrow + O2\\uparrow}$",
+      "explanation": ""
+    },
+    {
+      "id": "balance-006",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_CuSO_4 + \\_\\_NaOH\\frac{\\ \\ \\ \\ \\ \\ \\ \\ }{}\\_\\_Na_2SO_4 + \\_\\_Cu(OH)_2\\downarrow}$",
+      "options": null,
+      "answer": "$\\ce{CuSO4 + 2NaOH}\\xlongequal{}\\ce{Na2SO4 + Cu(OH)2\\downarrow}$",
+      "explanation": ""
+    },
+    {
+      "id": "balance-007",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_KMnO_4\\frac{\\ 加热\\ }{}\\_\\_K_2MnO_4 + \\_\\_MnO_2 + \\_\\_O_2\\uparrow}$",
+      "options": null,
+      "answer": "$\\ce{2KMnO4}\\xlongequal{加热}\\ce{K2MnO4 + MnO2 + O2\\uparrow}$",
+      "explanation": ""
+    },
+    {
+      "id": "balance-008",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_Al + \\_\\_CuSO_4\\frac{\\ \\ \\ \\ \\ \\ \\ \\ }{}\\_\\_Al_2(SO_4)_3 + \\_\\_Cu}$",
+      "options": null,
+      "answer": "$\\ce{2Al + 3CuSO4}\\xlongequal{}\\ce{Al2(SO4)3 + 3Cu}$",
+      "explanation": ""
+    },
+    {
+      "id": "balance-009",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_C_2H_5OH + \\_\\_O_2\\frac{\\ 点燃\\ }{}\\_\\_CO_2 + \\_\\_H_2O}$",
+      "options": null,
+      "answer": "$\\ce{C2H5OH + 3O2}\\xlongequal{点燃}\\ce{2CO2 + 3H2O}$",
+      "explanation": ""
+    },
+    {
+      "id": "balance-010",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_C_3H_8 + \\_\\_O_2\\frac{\\ 点燃\\ }{}\\_\\_CO_2 + \\_\\_H_2O}$",
+      "options": null,
+      "answer": "$\\ce{C3H8 + 5O2}\\xlongequal{点燃}\\ce{3CO2 + 4H2O}$",
+      "explanation": ""
+    },
+    {
+      "id": "balance-011",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_CO + \\_\\_Fe_2O_3\\frac{\\ 高温\\ }{}\\_\\_Fe + \\_\\_CO_2}$",
+      "options": null,
+      "answer": "$\\ce{3CO + Fe2O3}\\xlongequal{高温}\\ce{2Fe + 3CO2}$",
+      "explanation": ""
+    },
+    {
+      "id": "balance-012",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_C + \\_\\_Fe_2O_3\\frac{\\ 高温\\ }{}\\_\\_Fe + \\_\\_CO_2\\uparrow}$",
+      "options": null,
+      "answer": "$\\ce{3C + 2Fe2O3}\\xlongequal{高温}\\ce{4Fe + 3CO2\\uparrow}$",
+      "explanation": ""
+    },
+    {
+      "id": "balance-013",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_FeS_2 + \\_\\_O_2\\frac{\\ 高温\\ }{}\\_\\_Fe_2O_3 + \\_\\_SO_2}$",
+      "options": null,
+      "answer": "$\\ce{4FeS2 + 11O2}\\xlongequal{高温}\\ce{2Fe2O3 + 8SO2}$",
+      "explanation": ""
+    },
+    {
+      "id": "balance-014",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_MnO_2 + \\_\\_HCl\\frac{\\ 加热\\ }{}\\_\\_MnCl_2 + \\_\\_Cl_2\\uparrow + \\_\\_H_2O}$",
+      "options": null,
+      "answer": "$\\ce{MnO2 + 4HCl}\\xlongequal{加热}\\ce{MnCl2 + Cl2\\uparrow + 2H2O}$",
+      "explanation": ""
+    },
+    {
+      "id": "balance-015",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_NO + \\_\\_CO\\frac{\\ \\ \\ \\ \\ \\ \\ \\ }{}\\_\\_CO_2 + \\_\\_N_2}$",
+      "options": null,
+      "answer": "$\\ce{2NO + 2CO}\\xlongequal{}\\ce{2CO2 + N2}$",
+      "explanation": ""
+    },
+    {
+      "id": "balance-016",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_N_2H_4 + \\_\\_H_2O_2\\frac{\\ \\ \\ \\ \\ \\ \\ \\ }{}\\_\\_N_2\\uparrow + \\_\\_H_2O}$",
+      "options": null,
+      "answer": "$\\ce{N2H4 + 2H2O2}\\xlongequal{}\\ce{N2\\uparrow + 4H2O}$",
+      "explanation": ""
+    },
+    {
+      "id": "balance-017",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_N_2H_4 + \\_\\_O_2\\frac{\\ \\ \\ \\ \\ \\ \\ \\ }{}\\_\\_N_2 + \\_\\_H_2O}$",
+      "options": null,
+      "answer": "$\\ce{N2H4 + O2}\\xlongequal{}\\ce{N2 + 2H2O}$",
+      "explanation": ""
+    },
+    {
+      "id": "balance-018",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_Al_2O_3\\frac{\\ 通电\\ }{}\\_\\_Al + \\_\\_O_2\\uparrow}$",
+      "options": null,
+      "answer": "$\\ce{2Al2O3}\\xlongequal{通电}\\ce{4Al + 3O2\\uparrow}$",
+      "explanation": ""
+    },
+    {
+      "id": "balance-019",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_NaClO + \\_\\_HCl\\frac{\\ \\ \\ \\ \\ \\ \\ \\ }{}\\_\\_NaCl + \\_\\_H_2O + \\_\\_Cl_2\\uparrow}$",
+      "options": null,
+      "answer": "$\\ce{NaClO + 2HCl}\\xlongequal{}\\ce{NaCl + H2O + Cl2\\uparrow}$",
+      "explanation": ""
+    },
+    {
+      "id": "balance-020",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_NaClO + \\_\\_CO_2 + \\_\\_H_2O\\frac{\\ \\ \\ \\ \\ \\ \\ \\ }{}\\_\\_HClO + \\_\\_Na_2CO_3}$",
+      "options": null,
+      "answer": "$\\ce{2NaClO + CO2 + H2O}\\xlongequal{}\\ce{2HClO + Na2CO3}$",
+      "explanation": ""
+    },
+    {
+      "id": "balance-021",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_H_2S + \\_\\_O_2\\frac{\\ 点燃\\ }{}\\_\\_SO_2 + \\_\\_H_2O}$",
+      "options": null,
+      "answer": "$\\ce{2H2S + 3O2}\\xlongequal{点燃}\\ce{2SO2 + 2H2O}$",
+      "explanation": ""
+    },
+    {
+      "id": "balance-022",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_CO + \\_\\_Fe_3O_4\\frac{\\ 高温\\ }{}\\_\\_Fe + \\_\\_CO_2}$",
+      "options": null,
+      "answer": "$\\ce{4CO + Fe3O4}\\xlongequal{高温}\\ce{3Fe + 4CO2}$",
+      "explanation": ""
+    },
+    {
+      "id": "balance-023",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_NH_3 + \\_\\_Cl_2\\frac{\\ \\ \\ \\ \\ \\ \\ \\ }{}\\_\\_NH_4Cl + \\_\\_N_2}$",
+      "options": null,
+      "answer": "$\\ce{8NH3 + 3Cl2}\\xlongequal{}\\ce{6NH4Cl + N2}$",
+      "explanation": ""
+    },
+    {
+      "id": "balance-024",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_Fe_2(SO_4)_3 + \\_\\_NaOH\\frac{\\ \\ \\ \\ \\ \\ \\ \\ }{}\\_\\_Fe(OH)_3\\downarrow + \\_\\_Na_2SO_4}$",
+      "options": null,
+      "answer": "$\\ce{Fe2(SO4)3 + 6NaOH}\\xlongequal{}\\ce{2Fe(OH)3\\downarrow + 3Na2SO4}$",
+      "explanation": ""
+    },
+    {
+      "id": "balance-025",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_NH_3 + \\_\\_O_2\\frac{\\ 催化剂\\ }{}\\_\\_NO + \\_\\_H_2O}$",
+      "options": null,
+      "answer": "$\\ce{4NH3 + 5O2}\\xlongequal{催化剂}\\ce{4NO + 6H2O}$",
+      "explanation": ""
+    },
+    {
+      "id": "balance-026",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_P + \\_\\_O_2\\frac{\\ 点燃\\ }{}\\_\\_P_2O_5}$",
+      "options": null,
+      "answer": "$\\ce{4P + 5O2}\\xlongequal{点燃}\\ce{2P2O5}$",
+      "explanation": ""
+    },
+    {
+      "id": "balance-027",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_KClO_3\\frac{\\ 加热\\ }{}\\_\\_KCl + \\_\\_O_2\\uparrow}$",
+      "options": null,
+      "answer": "$\\ce{2KClO3}\\xlongequal{加热}\\ce{2KCl + 3O2\\uparrow}$",
+      "explanation": ""
+    },
+    {
+      "id": "balance-028",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_Al + \\_\\_Fe_3O_4\\frac{\\ 高温\\ }{}\\_\\_Al_2O_3 + \\_\\_Fe}$",
+      "options": null,
+      "answer": "$\\ce{8Al + 3Fe3O4}\\xlongequal{高温}\\ce{4Al2O3 + 9Fe}$",
+      "explanation": ""
+    },
+    {
+      "id": "balance-029",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_Al + \\_\\_HCl\\frac{\\ \\ \\ \\ \\ \\ \\ \\ }{}\\_\\_AlCl_3 + \\_\\_H_2\\uparrow}$",
+      "options": null,
+      "answer": "$\\ce{2Al + 6HCl}\\xlongequal{}\\ce{2AlCl3 + 3H2\\uparrow}$",
+      "explanation": ""
+    },
+    {
+      "id": "balance-030",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_CH_4 + \\_\\_O_2\\frac{\\ 点燃\\ }{}\\_\\_CO_2 + \\_\\_H_2O}$",
+      "options": null,
+      "answer": "$\\ce{CH4 + 2O2}\\xlongequal{点燃}\\ce{CO2 + 2H2O}$",
+      "explanation": ""
+    },
+    {
+      "id": "balance-031",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_C_8H_{18} + \\_\\_O_2\\frac{\\ 点燃\\ }{}\\_\\_CO_2 + \\_\\_H_2O}$",
+      "options": null,
+      "answer": "$\\ce{2C8H18 + 25O2}\\xlongequal{点燃}\\ce{16CO2 + 18H2O}$",
+      "explanation": ""
+    },
+    {
+      "id": "balance-032",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_Fe + \\_\\_H_2O\\frac{\\ 高温\\ }{}\\_\\_Fe_3O_4 + \\_\\_H_2}$",
+      "options": null,
+      "answer": "$\\ce{3Fe + 4H2O}\\xlongequal{高温}\\ce{Fe3O4 + 4H2}$",
+      "explanation": ""
+    },
+    {
+      "id": "balance-033",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_Fe(OH)_3 + \\_\\_H_2SO_4\\frac{\\ \\ \\ \\ \\ \\ \\ \\ }{}\\_\\_Fe_2(SO_4)_3 + \\_\\_H_2O}$",
+      "options": null,
+      "answer": "$\\ce{2Fe(OH)3 + 3H2SO4}\\xlongequal{}\\ce{Fe2(SO4)3 + 6H2O}$",
+      "explanation": ""
+    },
+    {
+      "id": "balance-034",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_Cu_2(OH)_2CO_3\\frac{\\ 加热\\ }{}\\_\\_CuO + \\_\\_H_2O + \\_\\_CO_2\\uparrow}$",
+      "options": null,
+      "answer": "$\\ce{Cu2(OH)2CO3}\\xlongequal{加热}\\ce{2CuO + H2O + CO2\\uparrow}$",
+      "explanation": ""
+    },
+    {
+      "id": "balance-035",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_C + \\_\\_Fe_3O_4\\frac{\\ 高温\\ }{}\\_\\_Fe + \\_\\_CO_2\\uparrow}$",
+      "options": null,
+      "answer": "$\\ce{2C + Fe3O4}\\xlongequal{高温}\\ce{3Fe + 2CO2\\uparrow}$",
+      "explanation": ""
+    },
+    {
+      "id": "balance-036",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_Cl_2 + \\_\\_Ca(OH)_2\\frac{\\ \\ \\ \\ \\ \\ \\ \\ }{}\\_\\_CaCl_2 + \\_\\_Ca(ClO)_2 + \\_\\_H_2O}$",
+      "options": null,
+      "answer": "$\\ce{2Cl2 + 2Ca(OH)2}\\xlongequal{}\\ce{CaCl2 + Ca(ClO)2 + 2H2O}$",
+      "explanation": ""
+    },
+    {
+      "id": "balance-037",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_CO_2 + \\_\\_H_2\\frac{\\ 催化剂\\ }{}\\_\\_CH_3OH + \\_\\_H_2O}$",
+      "options": null,
+      "answer": "$\\ce{CO2 + 3H2}\\xlongequal{催化剂}\\ce{CH3OH + H2O}$",
+      "explanation": ""
+    },
+    {
+      "id": "balance-038",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_NH_4HCO_3 + \\_\\_YCl_3\\frac{\\ \\ \\ \\ \\ \\ \\ \\ }{}\\_\\_Y_2(CO_3)_3\\downarrow + \\_\\_CO_2\\uparrow + \\_\\_NH_4Cl + \\_\\_H_2O}$",
+      "options": null,
+      "answer": "$\\ce{6NH4HCO3 + 2YCl3}\\xlongequal{}\\ce{Y2(CO3)3\\downarrow + 3CO2\\uparrow + 6NH4Cl + 3H2O}$",
+      "explanation": ""
+    },
+    {
+      "id": "balance-039",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_NaCl + \\_\\_H_2O\\frac{\\ 电解\\ }{}\\_\\_NaClO_3 + \\_\\_H_2\\uparrow}$",
+      "options": null,
+      "answer": "$\\ce{NaCl + 3H2O}\\xlongequal{电解}\\ce{NaClO3 + 3H2\\uparrow}$",
+      "explanation": ""
+    },
+    {
+      "id": "balance-040",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_ZnO + \\_\\_NaOH\\frac{\\ \\ \\ \\ \\ \\ \\ \\ }{}\\_\\_Na_2ZnO_2 + \\_\\_H_2O}$",
+      "options": null,
+      "answer": "$\\ce{ZnO + 2NaOH}\\xlongequal{}\\ce{Na2ZnO2 + H2O}$",
+      "explanation": ""
+    },
+    {
+      "id": "balance-041",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_CO_2 + \\_\\_H_2\\frac{\\ 高温\\ }{}\\_\\_H_2O + \\_\\_CH_4}$",
+      "options": null,
+      "answer": "$\\ce{CO2 + 4H2}\\xlongequal{高温}\\ce{2H2O + CH4}$",
+      "explanation": ""
+    },
+    {
+      "id": "balance-042",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_Al_2O_3 + \\_\\_H_2SO_4\\frac{\\ \\ \\ \\ \\ \\ \\ \\ }{}\\_\\_Al_2(SO_4)_3 + \\_\\_H_2O}$",
+      "options": null,
+      "answer": "$\\ce{Al2O3 + 3H2SO4}\\xlongequal{}\\ce{Al2(SO4)3 + 3H2O}$",
+      "explanation": ""
+    },
+    {
+      "id": "balance-043",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_N_2H_4 + \\_\\_N_2O_4\\frac{\\ \\ \\ \\ \\ \\ \\ \\ }{}\\_\\_N_2 + \\_\\_H_2O}$",
+      "options": null,
+      "answer": "$\\ce{2N2H4 + N2O4}\\xlongequal{}\\ce{3N2 + 4H2O}$",
+      "explanation": ""
+    },
+    {
+      "id": "balance-044",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_C_2H_5OH + \\_\\_O_2\\frac{\\ 催化剂\\ }{}\\_\\_CH_3COOH + \\_\\_H_2O}$",
+      "options": null,
+      "answer": "$\\ce{C2H5OH + O2}\\xlongequal{催化剂}\\ce{CH3COOH + H2O}$",
+      "explanation": ""
+    },
+    {
+      "id": "balance-045",
+      "unit": ["单元5"],
+      "content": "配平化学方程式：$\\mathrm{\\_\\_Mg + \\_\\_N_2\\frac{\\ 点燃\\ }{}\\_\\_Mg_3N_2}$",
+      "options": null,
+      "answer": "$\\ce{3Mg + N2}\\xlongequal{点燃}\\ce{Mg3N2}$",
+      "explanation": ""
+    }
+  ]
+}

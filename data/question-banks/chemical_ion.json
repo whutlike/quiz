@@ -1,0 +1,171 @@
+{
+  "bankInfo": {
+    "name": "初中化学离子符号默写",
+    "subject": "化学",
+    "description": "第四单元专用",
+    "version": "1.0",
+    "lastUpdate": "2025-01-19"
+  },
+  "questions": [
+    {
+      "id": "ion-001",
+      "unit": ["单元4"],
+      "content": "钾离子的符号是______。",
+      "options": null,
+      "answer": "K⁺",
+      "explanation": ""
+    },
+    {
+      "id": "ion-002",
+      "unit": ["单元4"],
+      "content": "钠离子的符号是______。",
+      "options": null,
+      "answer": "Na⁺",
+      "explanation": ""
+    },
+    {
+      "id": "ion-003",
+      "unit": ["单元4"],
+      "content": "氢离子的符号是______。",
+      "options": null,
+      "answer": "H⁺",
+      "explanation": ""
+    },
+    {
+      "id": "ion-004",
+      "unit": ["单元4"],
+      "content": "银离子的符号是______。",
+      "options": null,
+      "answer": "Ag⁺",
+      "explanation": ""
+    },
+    {
+      "id": "ion-005",
+      "unit": ["单元4"],
+      "content": "钙离子的符号是______。",
+      "options": null,
+      "answer": "Ca²⁺",
+      "explanation": ""
+    },
+    {
+      "id": "ion-006",
+      "unit": ["单元4"],
+      "content": "镁离子的符号是______。",
+      "options": null,
+      "answer": "Mg²⁺",
+      "explanation": ""
+    },
+    {
+      "id": "ion-007",
+      "unit": ["单元4"],
+      "content": "锌离子的符号是______。",
+      "options": null,
+      "answer": "Zn²⁺",
+      "explanation": ""
+    },
+    {
+      "id": "ion-008",
+      "unit": ["单元4"],
+      "content": "钡离子的符号是______。",
+      "options": null,
+      "answer": "Ba²⁺",
+      "explanation": ""
+    },
+    {
+      "id": "ion-009",
+      "unit": ["单元4"],
+      "content": "铜离子的符号是______。",
+      "options": null,
+      "answer": "Cu²⁺",
+      "explanation": ""
+    },
+    {
+      "id": "ion-010",
+      "unit": ["单元4"],
+      "content": "铝离子的符号是______。",
+      "options": null,
+      "answer": "Al³⁺",
+      "explanation": ""
+    },
+    {
+      "id": "ion-011",
+      "unit": ["单元4"],
+      "content": "亚铁离子的符号是______。",
+      "options": null,
+      "answer": "Fe²⁺",
+      "explanation": ""
+    },
+    {
+      "id": "ion-012",
+      "unit": ["单元4"],
+      "content": "铁离子的符号是______。",
+      "options": null,
+      "answer": "Fe³⁺",
+      "explanation": ""
+    },
+    {
+      "id": "ion-013",
+      "unit": ["单元4"],
+      "content": "氯离子的符号是______。",
+      "options": null,
+      "answer": "Cl⁻",
+      "explanation": ""
+    },
+    {
+      "id": "ion-014",
+      "unit": ["单元4"],
+      "content": "氧离子的符号是______。",
+      "options": null,
+      "answer": "O²⁻",
+      "explanation": ""
+    },
+    {
+      "id": "ion-015",
+      "unit": ["单元4"],
+      "content": "硫离子的符号是______。",
+      "options": null,
+      "answer": "S²⁻",
+      "explanation": ""
+    },
+    {
+      "id": "ion-016",
+      "unit": ["单元4"],
+      "content": "铵根离子的符号是______。",
+      "options": null,
+      "answer": "NH₄⁺",
+      "explanation": ""
+    },
+    {
+      "id": "ion-017",
+      "unit": ["单元4"],
+      "content": "氢氧根离子的符号是______。",
+      "options": null,
+      "answer": "OH⁻",
+      "explanation": ""
+    },
+    {
+      "id": "ion-018",
+      "unit": ["单元4"],
+      "content": "硝酸根离子的符号是______。",
+      "options": null,
+      "answer": "NO₃⁻",
+      "explanation": ""
+    },
+    {
+      "id": "ion-019",
+      "unit": ["单元4"],
+      "content": "碳酸根离子的符号是______。",
+      "options": null,
+      "answer": "CO₃²⁻",
+      "explanation": ""
+    },
+    {
+      "id": "ion-020",
+      "unit": ["单元4"],
+      "content": "硫酸根离子的符号是______。",
+      "options": null,
+      "answer": "SO₄²⁻",
+      "explanation": ""
+    }
+  ]
+}

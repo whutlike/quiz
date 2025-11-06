@@ -1,0 +1,891 @@
+{
+  "bankInfo": {
+    "name": "初中化学式书写练习",
+    "subject": "化学",
+    "description": "第四单元专用",
+    "version": "1.0",
+    "lastUpdate": "2025-01-19"
+  },
+  "questions": [
+    {
+      "id": "chem-formula-001",
+      "unit": ["单元4"],
+      "content": "镁的化学式是______。",
+      "options": null,
+      "answer": "Mg",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-002",
+      "unit": ["单元4"],
+      "content": "铝的化学式是______。",
+      "options": null,
+      "answer": "Al",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-003",
+      "unit": ["单元4"],
+      "content": "锌的化学式是______。",
+      "options": null,
+      "answer": "Zn",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-004",
+      "unit": ["单元4"],
+      "content": "铁的化学式是______。",
+      "options": null,
+      "answer": "Fe",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-005",
+      "unit": ["单元4"],
+      "content": "铜的化学式是______。",
+      "options": null,
+      "answer": "Cu",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-006",
+      "unit": ["单元4"],
+      "content": "汞的化学式是______。",
+      "options": null,
+      "answer": "Hg",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-007",
+      "unit": ["单元4"],
+      "content": "银的化学式是______。",
+      "options": null,
+      "answer": "Ag",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-008",
+      "unit": ["单元4"],
+      "content": "金的化学式是______。",
+      "options": null,
+      "answer": "Au",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-009",
+      "unit": ["单元4"],
+      "content": "碳的化学式是______。",
+      "options": null,
+      "answer": "C",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-010",
+      "unit": ["单元4"],
+      "content": "硫的化学式是______。",
+      "options": null,
+      "answer": "S",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-011",
+      "unit": ["单元4"],
+      "content": "磷的化学式是______。",
+      "options": null,
+      "answer": "P",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-012",
+      "unit": ["单元4"],
+      "content": "硅的化学式是______。",
+      "options": null,
+      "answer": "Si",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-013",
+      "unit": ["单元4"],
+      "content": "氦气的化学式是______。",
+      "options": null,
+      "answer": "He",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-014",
+      "unit": ["单元4"],
+      "content": "氖气的化学式是______。",
+      "options": null,
+      "answer": "Ne",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-015",
+      "unit": ["单元4"],
+      "content": "氩气的化学式是______。",
+      "options": null,
+      "answer": "Ar",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-016",
+      "unit": ["单元4"],
+      "content": "氢气的化学式是______。",
+      "options": null,
+      "answer": "H₂",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-017",
+      "unit": ["单元4"],
+      "content": "氮气的化学式是______。",
+      "options": null,
+      "answer": "N₂",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-018",
+      "unit": ["单元4"],
+      "content": "氧气的化学式是______。",
+      "options": null,
+      "answer": "O₂",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-019",
+      "unit": ["单元4"],
+      "content": "氟气的化学式是______。",
+      "options": null,
+      "answer": "F₂",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-020",
+      "unit": ["单元4"],
+      "content": "氯气的化学式是______。",
+      "options": null,
+      "answer": "Cl₂",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-021",
+      "unit": ["单元4"],
+      "content": "水的化学式是______。",
+      "options": null,
+      "answer": "H₂O",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-022",
+      "unit": ["单元4"],
+      "content": "二氧化碳的化学式是______。",
+      "options": null,
+      "answer": "CO₂",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-023",
+      "unit": ["单元4"],
+      "content": "一氧化碳的化学式是______。",
+      "options": null,
+      "answer": "CO",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-024",
+      "unit": ["单元4"],
+      "content": "二氧化氮的化学式是______。",
+      "options": null,
+      "answer": "NO₂",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-025",
+      "unit": ["单元4"],
+      "content": "二氧化硫的化学式是______。",
+      "options": null,
+      "answer": "SO₂",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-026",
+      "unit": ["单元4"],
+      "content": "五氧化二磷的化学式是______。",
+      "options": null,
+      "answer": "P₂O₅",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-027",
+      "unit": ["单元4"],
+      "content": "氧化汞的化学式是______。",
+      "options": null,
+      "answer": "HgO",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-028",
+      "unit": ["单元4"],
+      "content": "四氧化三铁的化学式是______。",
+      "options": null,
+      "answer": "Fe₃O₄",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-029",
+      "unit": ["单元4"],
+      "content": "二氧化锰的化学式是______。",
+      "options": null,
+      "answer": "MnO₂",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-030",
+      "unit": ["单元4"],
+      "content": "过氧化氢的化学式是______。",
+      "options": null,
+      "answer": "H₂O₂",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-031",
+      "unit": ["单元4"],
+      "content": "高锰酸钾的化学式是______。",
+      "options": null,
+      "answer": "KMnO₄",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-032",
+      "unit": ["单元4"],
+      "content": "锰酸钾的化学式是______。",
+      "options": null,
+      "answer": "K₂MnO₄",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-033",
+      "unit": ["单元4"],
+      "content": "氨水的化学式是______。",
+      "options": null,
+      "answer": "NH₃·H₂O",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-034",
+      "unit": ["单元4"],
+      "content": "氨气的化学式是______。",
+      "options": null,
+      "answer": "NH₃",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-035",
+      "unit": ["单元4"],
+      "content": "氧化铁的化学式是______。",
+      "options": null,
+      "answer": "Fe₂O₃",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-036",
+      "unit": ["单元4"],
+      "content": "氧化亚铁的化学式是______。",
+      "options": null,
+      "answer": "FeO",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-037",
+      "unit": ["单元4"],
+      "content": "氧化铜的化学式是______。",
+      "options": null,
+      "answer": "CuO",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-038",
+      "unit": ["单元4"],
+      "content": "氧化铝的化学式是______。",
+      "options": null,
+      "answer": "Al₂O₃",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-039",
+      "unit": ["单元4"],
+      "content": "氯化钙的化学式是______。",
+      "options": null,
+      "answer": "CaCl₂",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-040",
+      "unit": ["单元4"],
+      "content": "氯化钡的化学式是______。",
+      "options": null,
+      "answer": "BaCl₂",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-041",
+      "unit": ["单元4"],
+      "content": "氯化铁的化学式是______。",
+      "options": null,
+      "answer": "FeCl₃",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-042",
+      "unit": ["单元4"],
+      "content": "氯化银的化学式是______。",
+      "options": null,
+      "answer": "AgCl",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-043",
+      "unit": ["单元4"],
+      "content": "氢氧化钙的化学式是______。",
+      "options": null,
+      "answer": "Ca(OH)₂",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-044",
+      "unit": ["单元4"],
+      "content": "氢氧化铜的化学式是______。",
+      "options": null,
+      "answer": "Cu(OH)₂",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-045",
+      "unit": ["单元4"],
+      "content": "氢氧化铁的化学式是______。",
+      "options": null,
+      "answer": "Fe(OH)₃",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-046",
+      "unit": ["单元4"],
+      "content": "氢氧化铝的化学式是______。",
+      "options": null,
+      "answer": "Al(OH)₃",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-047",
+      "unit": ["单元4"],
+      "content": "硫酸钙的化学式是______。",
+      "options": null,
+      "answer": "CaSO₄",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-048",
+      "unit": ["单元4"],
+      "content": "硫酸铜的化学式是______。",
+      "options": null,
+      "answer": "CuSO₄",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-049",
+      "unit": ["单元4"],
+      "content": "硫酸钠的化学式是______。",
+      "options": null,
+      "answer": "Na₂SO₄",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-050",
+      "unit": ["单元4"],
+      "content": "硫酸钡的化学式是______。",
+      "options": null,
+      "answer": "BaSO₄",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-051",
+      "unit": ["单元4"],
+      "content": "碳酸钡的化学式是______。",
+      "options": null,
+      "answer": "BaCO₃",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-052",
+      "unit": ["单元4"],
+      "content": "碳酸钠的化学式是______。",
+      "options": null,
+      "answer": "Na₂CO₃",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-053",
+      "unit": ["单元4"],
+      "content": "碳酸钙的化学式是______。",
+      "options": null,
+      "answer": "CaCO₃",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-054",
+      "unit": ["单元4"],
+      "content": "碳酸铵的化学式是______。",
+      "options": null,
+      "answer": "(NH₄)₂CO₃",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-055",
+      "unit": ["单元4"],
+      "content": "硝酸银的化学式是______。",
+      "options": null,
+      "answer": "AgNO₃",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-056",
+      "unit": ["单元4"],
+      "content": "硝酸钡的化学式是______。",
+      "options": null,
+      "answer": "Ba(NO₃)₂",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-057",
+      "unit": ["单元4"],
+      "content": "硝酸亚铁的化学式是______。",
+      "options": null,
+      "answer": "Fe(NO₃)₂",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-058",
+      "unit": ["单元4"],
+      "content": "硝酸钾的化学式是______。",
+      "options": null,
+      "answer": "KNO₃",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-059",
+      "unit": ["单元4"],
+      "content": "盐酸的化学式是______。",
+      "options": null,
+      "answer": "HCl",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-060",
+      "unit": ["单元4"],
+      "content": "硫酸的化学式是______。",
+      "options": null,
+      "answer": "H₂SO₄",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-061",
+      "unit": ["单元4"],
+      "content": "碳酸的化学式是______。",
+      "options": null,
+      "answer": "H₂CO₃",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-062",
+      "unit": ["单元4"],
+      "content": "硝酸的化学式是______。",
+      "options": null,
+      "answer": "HNO₃",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-063",
+      "unit": ["单元4"],
+      "content": "氯化氢的化学式是______。",
+      "options": null,
+      "answer": "HCl",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-064",
+      "unit": ["单元4"],
+      "content": "氯化铵的化学式是______。",
+      "options": null,
+      "answer": "NH₄Cl",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-065",
+      "unit": ["单元4"],
+      "content": "硝酸铵的化学式是______。",
+      "options": null,
+      "answer": "NH₄NO₃",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-066",
+      "unit": ["单元4"],
+      "content": "硫酸铵的化学式是______。",
+      "options": null,
+      "answer": "(NH₄)₂SO₄",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-067",
+      "unit": ["单元4"],
+      "content": "氧化钾的化学式是______。",
+      "options": null,
+      "answer": "K₂O",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-068",
+      "unit": ["单元4"],
+      "content": "氢氧化钾的化学式是______。",
+      "options": null,
+      "answer": "KOH",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-069",
+      "unit": ["单元4"],
+      "content": "氯化钾的化学式是______。",
+      "options": null,
+      "answer": "KCl",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-070",
+      "unit": ["单元4"],
+      "content": "硫酸钾的化学式是______。",
+      "options": null,
+      "answer": "K₂SO₄",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-071",
+      "unit": ["单元4"],
+      "content": "碳酸钾的化学式是______。",
+      "options": null,
+      "answer": "K₂CO₃",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-072",
+      "unit": ["单元4"],
+      "content": "氧化钠的化学式是______。",
+      "options": null,
+      "answer": "Na₂O",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-073",
+      "unit": ["单元4"],
+      "content": "氢氧化钠的化学式是______。",
+      "options": null,
+      "answer": "NaOH",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-074",
+      "unit": ["单元4"],
+      "content": "氯化钠的化学式是______。",
+      "options": null,
+      "answer": "NaCl",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-075",
+      "unit": ["单元4"],
+      "content": "硝酸钠的化学式是______。",
+      "options": null,
+      "answer": "NaNO₃",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-076",
+      "unit": ["单元4"],
+      "content": "碳酸钠的化学式是______。",
+      "options": null,
+      "answer": "Na₂CO₃",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-077",
+      "unit": ["单元4"],
+      "content": "氧化钡的化学式是______。",
+      "options": null,
+      "answer": "BaO",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-078",
+      "unit": ["单元4"],
+      "content": "氢氧化钡的化学式是______。",
+      "options": null,
+      "answer": "Ba(OH)₂",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-079",
+      "unit": ["单元4"],
+      "content": "硝酸钡的化学式是______。",
+      "options": null,
+      "answer": "Ba(NO₃)₂",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-080",
+      "unit": ["单元4"],
+      "content": "氧化钙的化学式是______。",
+      "options": null,
+      "answer": "CaO",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-081",
+      "unit": ["单元4"],
+      "content": "硝酸钙的化学式是______。",
+      "options": null,
+      "answer": "Ca(NO₃)₂",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-082",
+      "unit": ["单元4"],
+      "content": "氧化镁的化学式是______。",
+      "options": null,
+      "answer": "MgO",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-083",
+      "unit": ["单元4"],
+      "content": "氢氧化镁的化学式是______。",
+      "options": null,
+      "answer": "Mg(OH)₂",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-084",
+      "unit": ["单元4"],
+      "content": "氯化镁的化学式是______。",
+      "options": null,
+      "answer": "MgCl₂",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-085",
+      "unit": ["单元4"],
+      "content": "硝酸镁的化学式是______。",
+      "options": null,
+      "answer": "Mg(NO₃)₂",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-086",
+      "unit": ["单元4"],
+      "content": "硫酸镁的化学式是______。",
+      "options": null,
+      "answer": "MgSO₄",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-087",
+      "unit": ["单元4"],
+      "content": "碳酸镁的化学式是______。",
+      "options": null,
+      "answer": "MgCO₃",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-088",
+      "unit": ["单元4"],
+      "content": "氯化铝的化学式是______。",
+      "options": null,
+      "answer": "AlCl₃",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-089",
+      "unit": ["单元4"],
+      "content": "硝酸铝的化学式是______。",
+      "options": null,
+      "answer": "Al(NO₃)₃",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-090",
+      "unit": ["单元4"],
+      "content": "硫酸铝的化学式是______。",
+      "options": null,
+      "answer": "Al₂(SO₄)₃",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-091",
+      "unit": ["单元4"],
+      "content": "氧化锌的化学式是______。",
+      "options": null,
+      "answer": "ZnO",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-092",
+      "unit": ["单元4"],
+      "content": "氢氧化锌的化学式是______。",
+      "options": null,
+      "answer": "Zn(OH)₂",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-093",
+      "unit": ["单元4"],
+      "content": "氯化锌的化学式是______。",
+      "options": null,
+      "answer": "ZnCl₂",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-094",
+      "unit": ["单元4"],
+      "content": "硝酸锌的化学式是______。",
+      "options": null,
+      "answer": "Zn(NO₃)₂",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-095",
+      "unit": ["单元4"],
+      "content": "硫酸锌的化学式是______。",
+      "options": null,
+      "answer": "ZnSO₄",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-096",
+      "unit": ["单元4"],
+      "content": "碳酸锌的化学式是______。",
+      "options": null,
+      "answer": "ZnCO₃",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-097",
+      "unit": ["单元4"],
+      "content": "氢氧化亚铁的化学式是______。",
+      "options": null,
+      "answer": "Fe(OH)₂",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-098",
+      "unit": ["单元4"],
+      "content": "氯化亚铁的化学式是______。",
+      "options": null,
+      "answer": "FeCl₂",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-099",
+      "unit": ["单元4"],
+      "content": "硝酸亚铁的化学式是______。",
+      "options": null,
+      "answer": "Fe(NO₃)₂",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-100",
+      "unit": ["单元4"],
+      "content": "硫酸亚铁的化学式是______。",
+      "options": null,
+      "answer": "FeSO₄",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-101",
+      "unit": ["单元4"],
+      "content": "碳酸亚铁的化学式是______。",
+      "options": null,
+      "answer": "FeCO₃",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-102",
+      "unit": ["单元4"],
+      "content": "硝酸铁的化学式是______。",
+      "options": null,
+      "answer": "Fe(NO₃)₃",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-103",
+      "unit": ["单元4"],
+      "content": "硫酸铁的化学式是______。",
+      "options": null,
+      "answer": "Fe₂(SO₄)₃",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-104",
+      "unit": ["单元4"],
+      "content": "氢氧化铜的化学式是______。",
+      "options": null,
+      "answer": "Cu(OH)₂",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-105",
+      "unit": ["单元4"],
+      "content": "氯化铜的化学式是______。",
+      "options": null,
+      "answer": "CuCl₂",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-106",
+      "unit": ["单元4"],
+      "content": "硝酸铜的化学式是______。",
+      "options": null,
+      "answer": "Cu(NO₃)₂",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-107",
+      "unit": ["单元4"],
+      "content": "硫酸铜的化学式是______。",
+      "options": null,
+      "answer": "CuSO₄",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-108",
+      "unit": ["单元4"],
+      "content": "氧化银的化学式是______。",
+      "options": null,
+      "answer": "Ag₂O",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-109",
+      "unit": ["单元4"],
+      "content": "硫酸银的化学式是______。",
+      "options": null,
+      "answer": "Ag₂SO₄",
+      "explanation": ""
+    },
+    {
+      "id": "chem-formula-110",
+      "unit": ["单元4"],
+      "content": "碳酸银的化学式是______。",
+      "options": null,
+      "answer": "Ag₂CO₃",
+      "explanation": ""
+    }
+  ]
+}
