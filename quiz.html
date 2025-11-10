@@ -9,22 +9,27 @@
 </head>
 <body>
     <div class="container">
+        <!-- 侧边栏悬浮按钮 -->
+        <button id="sidebarToggle" class="sidebar-toggle">☰</button>
+        
         <header style="background: none; color: #333; text-align: left; margin-bottom: 1rem;">
             <h1 id="bankTitle">题库加载中...</h1>
             <div class="control-buttons">
                 <button id="backBtn" class="control-button layout">返回首页</button>
-                <!-- 侧边栏切换按钮 -->
-                <button id="toggleSidebar" class="control-button layout">筛选设置</button>
-                <!-- 布局切换按钮 -->
-                <button id="layoutToggleBtn" class="control-button layout">切换布局</button>
-                <!-- 全局答案控制按钮（紧凑布局显示） -->
+                <!-- 移除原来的筛选设置按钮 -->
+                <button id="layoutToggleBtn" class="control-button layout">切换到紧凑布局</button>
                 <button id="allAnswersBtn" class="control-button answers">展开答案</button>
+                <div class="font-size-controls">
+                    <button id="fontSizeDown" class="control-button layout">A-</button>
+                    <span id="fontSizeDisplay" class="font-size-display">100%</span>
+                    <button id="fontSizeUp" class="control-button layout">A+</button>
+                </div>
             </div>
         </header>
 
-        <div class="quiz-container">
+        <div class="quiz-container" id="quizContainer">
             <!-- 筛选面板 -->
-            <aside class="filter-panel">
+            <aside class="filter-panel" id="filterPanel">
                 <div class="filter-section">
                     <div class="filter-header">
                         <h3>范围筛选</h3>

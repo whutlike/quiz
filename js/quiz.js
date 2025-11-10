@@ -13,6 +13,13 @@ class QuizManager {
         this.sequentialStartIndex = 0;
         this.hasInitialized = false;
         this.allAnswersVisible = false;
+        this.isSidebarCollapsed = false;
+        this.isMobile = window.innerWidth <= 768;
+
+        this.fontSizeScale = 1.0;
+        this.minFontSize = 0.8;
+        this.maxFontSize = 3.0;
+        this.fontSizeStep = 0.1;
         
         if (document.readyState === 'loading') {
             document.addEventListener('DOMContentLoaded', () => this.init());
@@ -35,7 +42,11 @@ class QuizManager {
 
         await this.loadBankData(bankId);
         this.renderFilters();
+        this.loadFontSize();
         this.applySettings(true);
+        
+        this.initSidebarState();
+        this.adjustButtonPosition();
     }
 
     bindEvents() {
@@ -55,12 +66,17 @@ class QuizManager {
             if (e.target.id === 'nextGroupBtn') {
                 this.showNextGroup();
             }
-            // 侧边栏控制
-            if (e.target.id === 'toggleSidebar') {
+            if (e.target.id === 'sidebarToggle') {
                 this.toggleSidebar();
             }
             if (e.target.id === 'filterOverlay') {
                 this.closeSidebar();
+            }
+            if (e.target.id === 'fontSizeUp') {
+                this.adjustFontSize(this.fontSizeStep);
+            }
+            if (e.target.id === 'fontSizeDown') {
+                this.adjustFontSize(-this.fontSizeStep);
             }
         });
 
@@ -68,24 +84,169 @@ class QuizManager {
         if (applyBtn) {
             applyBtn.addEventListener('click', () => {
                 this.applySettings();
-                this.closeSidebar(); // 应用设置后关闭侧边栏
+                if (this.isMobile) {
+                    this.closeSidebar();
+                }
             });
         }
+
+        window.addEventListener('resize', () => {
+            this.handleResize();
+        });
     }
 
     // 侧边栏控制方法
     toggleSidebar() {
-        const sidebar = document.querySelector('.filter-panel');
+        const sidebar = document.getElementById('filterPanel');
         const overlay = document.getElementById('filterOverlay');
-        sidebar.classList.toggle('active');
-        overlay.classList.toggle('active');
+        const toggleBtn = document.getElementById('sidebarToggle');
+        
+        if (!sidebar) return;
+
+        const isActive = sidebar.classList.contains('active') || 
+                        (!this.isMobile && !sidebar.classList.contains('collapsed'));
+
+        if (isActive) {
+            this.closeSidebar();
+        } else {
+            this.openSidebar();
+        }
+    }
+
+    openSidebar() {
+        const sidebar = document.getElementById('filterPanel');
+        const overlay = document.getElementById('filterOverlay');
+        const toggleBtn = document.getElementById('sidebarToggle');
+        const quizContainer = document.getElementById('quizContainer');
+        
+        if (this.isMobile) {
+            sidebar.classList.add('active');
+            overlay.classList.add('active');
+        } else {
+            sidebar.classList.remove('collapsed');
+            if (quizContainer) {
+                quizContainer.classList.remove('with-collapsed-sidebar');
+            }
+            this.isSidebarCollapsed = false;
+            this.saveSidebarState();
+        }
+        
+        if (toggleBtn) {
+            toggleBtn.textContent = '✕';
+            toggleBtn.title = '折叠侧边栏';
+        }
     }
 
     closeSidebar() {
-        const sidebar = document.querySelector('.filter-panel');
+        const sidebar = document.getElementById('filterPanel');
         const overlay = document.getElementById('filterOverlay');
-        sidebar.classList.remove('active');
-        overlay.classList.remove('active');
+        const toggleBtn = document.getElementById('sidebarToggle');
+        const quizContainer = document.getElementById('quizContainer');
+        
+        if (this.isMobile) {
+            sidebar.classList.remove('active');
+            overlay.classList.remove('active');
+        } else {
+            sidebar.classList.add('collapsed');
+            if (quizContainer) {
+                quizContainer.classList.add('with-collapsed-sidebar');
+            }
+            this.isSidebarCollapsed = true;
+            this.saveSidebarState();
+        }
+        
+        if (toggleBtn) {
+            toggleBtn.textContent = '☰';
+            toggleBtn.title = '展开侧边栏';
+        }
+    }
+
+    handleResize() {
+        const wasMobile = this.isMobile;
+        this.isMobile = window.innerWidth <= 768;
+        
+        if (wasMobile !== this.isMobile) {
+            this.closeSidebar();
+            this.adjustButtonPosition();
+        }
+    }
+
+    adjustButtonPosition() {
+        const toggleBtn = document.getElementById('sidebarToggle');
+        if (!toggleBtn || !this.isMobile) return;
+
+        const controlButtons = document.querySelector('.control-buttons');
+        let offset = 80;
+
+        if (controlButtons && controlButtons.children.length > 0) {
+            const buttonHeight = controlButtons.offsetHeight;
+            offset = 80 + buttonHeight + 10;
+        }
+
+        toggleBtn.style.top = `${offset}px`;
+    }
+
+    initSidebarState() {
+        if (this.isMobile) {
+            this.closeSidebar();
+        } else {
+            this.loadSidebarState();
+            this.updateSidebarState();
+        }
+    }
+
+    updateSidebarState() {
+        if (!this.isMobile) {
+            const sidebar = document.getElementById('filterPanel');
+            const quizContainer = document.getElementById('quizContainer');
+            const questionsContainer = document.getElementById('questionsContainer');
+            const toggleBtn = document.getElementById('sidebarToggle');
+
+            if (!sidebar) return;
+
+            if (this.isSidebarCollapsed) {
+                sidebar.classList.add('collapsed');
+                if (quizContainer) {
+                    quizContainer.classList.add('with-collapsed-sidebar');
+                }
+                if (questionsContainer) {
+                    questionsContainer.classList.add('full-width');
+                }
+                if (toggleBtn) {
+                    toggleBtn.textContent = '☰';
+                    toggleBtn.title = '展开侧边栏';
+                }
+            } else {
+                sidebar.classList.remove('collapsed');
+                if (quizContainer) {
+                    quizContainer.classList.remove('with-collapsed-sidebar');
+                }
+                if (questionsContainer) {
+                    questionsContainer.classList.remove('full-width');
+                }
+                if (toggleBtn) {
+                    toggleBtn.textContent = '✕';
+                    toggleBtn.title = '折叠侧边栏';
+                }
+            }
+
+            this.saveSidebarState();
+        }
+    }
+
+    saveSidebarState() {
+        if (!this.isMobile) {
+            localStorage.setItem('sidebarCollapsed', this.isSidebarCollapsed.toString());
+        }
+    }
+
+    loadSidebarState() {
+        if (!this.isMobile) {
+            const savedState = localStorage.getItem('sidebarCollapsed');
+            if (savedState !== null) {
+                this.isSidebarCollapsed = savedState === 'true';
+            }
+        }
     }
 
     async loadBankData(bankId) {
@@ -101,6 +262,7 @@ class QuizManager {
     renderFilters() {
         this.renderUnitFilter();
         this.setOrderMode('sequential');
+        this.loadSidebarState();
     }
 
     renderUnitFilter() {
@@ -137,7 +299,6 @@ class QuizManager {
     applySettings(isInitial = false) {
         this.updateSettings();
         
-        // 筛选题目
         this.filteredQuestions = this.questions.filter(question => {
             if (this.settings.units.length > 0) {
                 const hasMatchingUnit = question.unit.some(unit => 
@@ -150,7 +311,6 @@ class QuizManager {
         
         this.updateToggleAllButton();
         
-        // 初始加载或筛选条件变化时重置索引
         if (isInitial || this.hasFilterChanged()) {
             this.sequentialStartIndex = 0;
         }
@@ -179,7 +339,6 @@ class QuizManager {
                 questionsToShow = this.shuffleArray([...this.filteredQuestions]);
             }
         } else {
-            // 顺序模式：确保不会超出题目总数
             if (this.settings.questionCount !== 'all') {
                 const count = parseInt(this.settings.questionCount);
                 const endIndex = Math.min(this.sequentialStartIndex + count, this.filteredQuestions.length);
@@ -197,7 +356,6 @@ class QuizManager {
             const count = parseInt(this.settings.questionCount);
             this.sequentialStartIndex -= count;
             
-            // 如果小于0，跳到最后一组
             if (this.sequentialStartIndex < 0) {
                 const lastGroupStart = Math.max(0, this.filteredQuestions.length - count);
                 this.sequentialStartIndex = lastGroupStart;
@@ -214,12 +372,10 @@ class QuizManager {
                 const count = parseInt(this.settings.questionCount);
                 this.sequentialStartIndex += count;
                 
-                // 如果超出题目总数，回到开头
                 if (this.sequentialStartIndex >= this.filteredQuestions.length) {
                     this.sequentialStartIndex = 0;
                 }
             }
-            // 随机模式不需要更新索引，直接重新处理题目即可
             
             this.processQuestions();
             this.renderQuestions();
@@ -281,21 +437,32 @@ class QuizManager {
         
         const layoutBtn = document.getElementById('layoutToggleBtn');
         const allAnswersBtn = document.getElementById('allAnswersBtn');
+        const fontSizeControls = document.querySelector('.font-size-controls');
         
         if (this.layoutMode === 'normal') {
-            layoutBtn.textContent = '切换布局';
+            layoutBtn.textContent = '切换到紧凑布局';
             if (allAnswersBtn) {
                 allAnswersBtn.style.display = 'none';
             }
+            if (fontSizeControls) {
+                fontSizeControls.style.display = 'none';
+            }
         } else {
-            layoutBtn.textContent = '切换布局';
+            layoutBtn.textContent = '切换到原始布局';
             if (allAnswersBtn) {
                 allAnswersBtn.style.display = 'inline-block';
-                allAnswersBtn.textContent = '展开答案';
+                allAnswersBtn.textContent = '展开所有答案';
+            }
+            if (fontSizeControls) {
+                fontSizeControls.style.display = 'flex';
             }
         }
         
         this.applySettings();
+        
+        setTimeout(() => {
+            this.adjustButtonPosition();
+        }, 100);
     }
 
     toggleAllAnswers() {
@@ -340,7 +507,6 @@ class QuizManager {
             startNumber = this.sequentialStartIndex + 1;
         }
         
-        // 添加下一组按钮（仅在不是全部题目时显示）
         let navigationButtons = '';
         if (this.settings.questionCount !== 'all' && this.filteredQuestions.length > 0) {
             navigationButtons = `
@@ -450,6 +616,90 @@ class QuizManager {
         } else {
             answerSection.classList.add('hidden');
             button.textContent = '显示答案';
+        }
+    }
+
+    // 字体大小控制方法
+    adjustFontSize(step) {
+        const newScale = this.fontSizeScale + step;
+        
+        if (newScale >= this.minFontSize && newScale <= this.maxFontSize) {
+            this.fontSizeScale = Math.round(newScale * 10) / 10;
+            this.applyFontSize();
+            this.saveFontSize();
+        }
+    }
+
+    applyFontSize() {
+        const styleId = 'compact-font-size';
+        let style = document.getElementById(styleId);
+        
+        if (!style) {
+            style = document.createElement('style');
+            style.id = styleId;
+            document.head.appendChild(style);
+        }
+
+        const baseSizes = {
+            compactContent: 1.4,
+            compactOptions: 0.95,
+            compactAnswer: 0.95,
+            compactNumber: 1.3
+        };
+
+        style.textContent = `
+            .question-content.compact-content { 
+                font-size: ${(baseSizes.compactContent * this.fontSizeScale).toFixed(2)}rem !important; 
+            }
+            .question-options.compact-options .option-item { 
+                font-size: ${(baseSizes.compactOptions * this.fontSizeScale).toFixed(2)}rem !important; 
+            }
+            .answer-section.compact-answer { 
+                font-size: ${(baseSizes.compactAnswer * this.fontSizeScale).toFixed(2)}rem !important; 
+            }
+            .question-content.compact-content .question-number { 
+                font-size: ${(baseSizes.compactNumber * this.fontSizeScale).toFixed(2)}rem !important; 
+            }
+        `;
+
+        this.updateFontSizeDisplay();
+        this.updateFontSizeButtons();
+        
+        if (this.layoutMode === 'compact') {
+            this.renderMath();
+        }
+    }
+
+    updateFontSizeDisplay() {
+        const display = document.getElementById('fontSizeDisplay');
+        if (display) {
+            display.textContent = `${Math.round(this.fontSizeScale * 100)}%`;
+        }
+    }
+
+    updateFontSizeButtons() {
+        const downBtn = document.getElementById('fontSizeDown');
+        const upBtn = document.getElementById('fontSizeUp');
+        
+        if (downBtn && upBtn) {
+            downBtn.disabled = this.fontSizeScale <= this.minFontSize;
+            upBtn.disabled = this.fontSizeScale >= this.maxFontSize;
+            
+            downBtn.style.opacity = this.fontSizeScale <= this.minFontSize ? '0.5' : '1';
+            upBtn.style.opacity = this.fontSizeScale >= this.maxFontSize ? '0.5' : '1';
+        }
+    }
+
+    saveFontSize() {
+        localStorage.setItem('compactFontSize', this.fontSizeScale.toString());
+    }
+
+    loadFontSize() {
+        const savedSize = localStorage.getItem('compactFontSize');
+        if (savedSize !== null) {
+            this.fontSizeScale = parseFloat(savedSize);
+            this.fontSizeScale = Math.max(this.minFontSize, Math.min(this.maxFontSize, this.fontSizeScale));
+            this.applyFontSize();
         }
     }
 }
